@@ -1,0 +1,413 @@
+.header
+  background-color: $grayish-blue
+  padding-top: 42px
+  &-left, &-right, &-logo, &-address, &-shedule, &-phone
+    display: flex 
+    flex-direction: row
+
+  
+
+  
+
+    
+
+  &-logo
+    &_image, &_text
+      display: inline
+      vertical-align: middle
+
+    &_image
+      
+    &_text
+      
+      font-size: 12px
+
+      color: #ffffff
+      margin-left: 25px
+      display: flex 
+      flex-direction: column 
+      align-items: left
+      align-self: center
+      
+      div 
+        width: fit-content
+
+  &-address, &-shedule, &-phone 
+    color: #ffffff
+    align-self: center
+    &__text
+      &.font_light
+
+      &.font_bold
+        font-weight: bold
+
+  &-address, &-shedule
+    flex-direction: column
+    
+    font-size: 12px
+
+  &-address 
+    margin-left: 105px
+  
+  &-shedule 
+    margin-left: 55px
+
+  &-phone 
+    width: 100%
+    justify-content: flex-end
+    //justify-self: right
+
+    &__icon
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-left: -7px
+      margin-top: -7px
+      width: 15px
+      height: 15px
+      background: url(../img/head/phone.png) center no-repeat
+
+      &-wrapper
+        border-radius: 50%
+        width: 50px
+        height: 50px
+        position: relative
+
+        background-color: $white
+
+    &__text 
+      display: flex 
+      flex-direction: column
+      align-items: flex-end
+      margin-left: 24px
+
+      &-title 
+        font-size: 18px
+      &-subtitle 
+        font-size: 12px
+        //justify-self: right
+
+
+
+  &-right
+
+
+    
+         
+          
+
+
+.main 
+  background-color: $grayish-blue
+  padding: 211px 0px 413px 0
+  color: $white
+  position: relative
+  
+  &-title 
+    font-size: 48px
+    font-weight: 700
+
+
+.about
+  padding: 0
+  
+  &-container
+    position: relative
+    margin-top: -365px
+    z-index: 1
+    background-color: $light-pink
+    padding: 105px 80px
+    border-radius: 5px
+    &__wrapper
+      //height: 1110px
+      position: relative
+
+    .section-title  
+      padding-bottom: 45px
+      line-height: 40px
+
+  &-descr 
+    font-size: 13px
+    line-height: 30px
+    font-family: Stolzl-Light, san-serif
+
+  &-info 
+    padding-left: 140px
+    &:first-child
+      margin-bottom: 70px
+      margin-top: 5px
+    &__txt 
+      margin-top: 25px
+      font-size: 12px
+      line-height: 24px
+      color: rgba(97, 97, 97, 255)
+      //font-weight: bold
+    &__icon 
+      img
+
+  &-photo1, &-photo2, &-photo3, &-photo4, &-photo5 
+    
+    background-size: cover
+    width: 100%
+    height: 372px
+    border-radius: 5px
+    margin: 75px 0
+
+  &-photo1 
+    background: url(../img/service/service-photo-1.jpg) 30% 20% no-repeat
+    background-size: cover
+
+  &-photo2 
+    background: url(../img/service/service-photo-2.jpg) center no-repeat
+    background-size: cover
+
+  &-photo3 
+    background: url(../img/service/service-photo-3.jpg) 30% 20%  no-repeat
+    background-size: cover
+
+  &-photo4 
+    background: url(../img/service/service-photo-4.jpg) center no-repeat
+    background-size: cover
+
+  &-photo5 
+    background: url(../img/service/service-photo-5.jpeg) center no-repeat
+    background-size: cover
+
+  &-prices1, &-prices2
+    &__rows
+      
+      .prices-row
+        margin-bottom: 30px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-content: center
+        &__name
+          //display: inline-block
+          font-size: 13px
+          flex-basis: 80%
+          font-family: Stolzl-Light, san-serif
+          
+        &__price 
+          //display: inline-block
+          text-align: right
+          font-size: 13px
+          font-weight: bold
+          flex-basis: 20%
+
+  &-prices1
+    &__rows
+      padding-right: 40px
+      .prices-row
+        &:nth-child(3)
+          padding-bottom: 45px
+          border-bottom: 2px solid $white
+
+        &:nth-child(4)
+          padding-top: 13px
+
+        &:nth-child(5)
+          padding-bottom: 45px
+          border-bottom: 2px solid $white
+
+        &:nth-child(6)
+          padding-top: 13px
+
+
+  &-prices2
+    &__rows
+      padding-left: 40px
+      .prices-row
+        &:nth-child(4)
+          padding-bottom: 45px
+          border-bottom: 2px solid $white
+          
+
+        &:nth-child(5)
+          padding-top: 13px
+          padding-bottom: 45px
+          border-bottom: 2px solid $white
+          
+        
+
+  
+   
+.order 
+  background-color: $grayish-blue
+  position: relative
+  margin-top: -105px
+  padding-bottom: 35px
+  .section-title 
+    color: $white
+    padding-top: 20px
+    line-height: 40px
+    font-weight: normal
+    //max-width: 412px
+  &-form 
+    position: relative
+    z-index: 1
+    .form
+      //margin-top: 79px
+      border-radius: 5px
+      background-color: $white
+      padding: 76px 49px
+      &-fieldset
+      &-input
+        //padding-left: 30%
+        width: 100%
+        margin-bottom: 20px
+      
+      
+
+      button
+        margin-top: 20px
+        width: 100%
+      &-politics
+        font-size: 14px
+        color: rgba(205, 205, 205, 255)//$dark-white
+
+        margin-top: 40px
+        text-align: center
+        //text-transform: uppercase
+        text-decoration: underline
+
+    // &__caption
+    //   width: 170px
+    //   height: 170px
+    //   border-radius: 50%
+    //   background-color: $grayish-blue
+    //   padding: 40px 30px
+    //   text-align: center
+    //   position: absolute
+    //   right: -85px
+    //   top: -55px
+    //   z-index: 10
+    //   &::before
+    //     position: absolute
+    //     content: ''
+    //     top: -15px
+    //     left: -15px
+    //     width: 200px
+    //     height: 200px
+    //     border-radius: 50%
+    //     border: 2px solid $grayish-blue
+    //     opacity: .2
+
+    //   .caption-title
+    //     font-size: 10px
+    //     line-height: 17px
+    //     font-weight: bold
+    //     color: $white
+    //     margin-top: 10px
+    //   .caption-icon
+    //     margin-top: 5px
+    //     img 
+  
+  
+
+  &-photo 
+    position: absolute
+    bottom: 0px
+    right: 8%
+    //z-index: 0
+    width: 700px
+    height: 700px
+    &::before 
+      content: ''
+      position: absolute
+      bottom: 80px
+      left: 120px
+      width: 480px
+      height: 480px
+      background-color: $white
+      border-radius: 50%
+      border: 1px solid $white
+      opacity: .1
+      padding: 40px
+    &__container-circle
+      &1
+        width: 640px
+        height: 640px
+        position: absolute
+        bottom: 0px
+        left: 40px
+        &::before
+          content: ''
+          position: absolute
+          bottom: 0
+          left: 0
+          width: 100%
+          height: 100%
+          
+          border-radius: 50%
+          border: 1px solid $white
+          opacity: .1
+          padding: 40px
+
+      &2
+        width: 560px
+        height: 560px
+        position: absolute
+        bottom: 40px
+        left: 40px
+        &::before
+          content: ''
+          position: absolute
+          bottom: 0
+          left: 0
+          width: 100%
+          height: 100%
+          
+          border-radius: 50%
+          border: 1px solid $white
+          opacity: .1
+          padding: 40px
+    //background: url(../img/service/order-girl.png) bottom center no-repeat//url(../img/service/order-girl-with-circles.png) bottom center no-repeat
+    // &::before 
+    //   content: ''
+    //   position: absolute
+    //   top: 0
+    //   left: 0
+    //   width: 100%
+    //   height: 100%
+    //   background: url(../img/service/order-girl-with-circles.png) center no-repeat
+
+    img 
+      max-width: 660px
+      max-height: 660px
+      //padding: 0px 95px
+      left: 70px
+      position: absolute
+      bottom: 0//-40px
+      z-index: 2
+      
+        //opacity: .8
+
+    // &__circle
+    //   &1, &2, &3
+    //     border-radius: 50%
+    //     border: 1px solid $white
+        
+    //     padding: 40px
+        
+    //   &1
+    //     // position: absolute
+    //     // top: 80px
+    //     width: 760px
+    //     height: 760px
+    //     opacity: .1
+        
+        
+    //   &2
+    //     width: 680px
+    //     height: 680px
+    //     opacity: .8
+        
+    //   &3
+        
+    //     width: 600px
+    //     height: 600px
+    //     background-color: $white
+    //     opacity: .8
+
+
