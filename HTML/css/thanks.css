@@ -13,17 +13,20 @@ button.button {
   color: #4F4F57;
   font-family: Ubuntu, san-serif;
   font-size: 10px;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   border: 1px solid #565DA4;
   border-radius: 2px;
   outline: none;
-  padding: 27px;
+  padding: 27px 10px;
   background: transparent;
 }
 
 button.button span {
   color: #565DA4;
+  margin-top: 2px;
+  display: block;
 }
 
 button.button.button_filled {
@@ -48,14 +51,39 @@ input {
   text-align: left;
 }
 
+.section-title__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .section-title_black {
   color: #1C161C;
 }
 
-.section-title span {
+.section-title span.blue {
   color: #565DA4;
   font-weight: bold;
   font-size: 50px;
+}
+
+.section-title span.slush {
+  font-size: 35px;
+  color: #565DA4;
   margin-left: 15px;
 }
 
@@ -65,6 +93,32 @@ input {
   font-size: 14px;
   font-weight: bold;
   text-align: left;
+}
+
+.section-subtitle__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-subtitle__wrapper .caption {
+  color: #4F4F57;
+  font-size: 54px;
+  font-family: Ubuntu, san-serif;
+  font-weight: bold;
+  margin-right: 23px;
 }
 
 .header {
@@ -337,62 +391,63 @@ input {
   }
 }
 
+@media (max-width: 1199px) {
+  .header-logo img {
+    padding-top: 15px;
+  }
+}
+
 @media (max-width: 1099px) {
-  section {
+  section, section.main, section.cta, section.services, section.about, section.toget,
+  section.calculations, section.digits, section.team, section.logos,
+  section.results, section.recommends, section.cta-bottom {
     padding: 120px 0px;
   }
 }
 
 @media (max-width: 991px) {
-  section {
+  section, section.main, section.cta, section.services, section.about, section.toget,
+  section.calculations, section.digits, section.team, section.logos,
+  section.results, section.recommends, section.cta-bottom {
     padding: 100px 0px;
   }
-  .header-logo_text {
-    margin-left: 15px;
-  }
-  .header-address {
-    margin-left: 50px;
-  }
-  .header-shedule {
-    margin-left: 40px;
-  }
-  .header-phone__icon-wrapper {
-    width: 40px;
-    height: 40px;
-  }
-  .header-phone {
-    margin-top: 5px;
-  }
-  .header-phone__text {
-    margin-left: 10px;
-  }
-  .header-phone__text-title {
-    font-size: 16px;
+  .header-logo img {
+    padding-top: 5px;
   }
 }
 
 @media (max-width: 767px) {
-  section {
-    padding: 80px 0px;
+  section, section.main, section.cta, section.services, section.about, section.toget,
+  section.calculations, section.digits, section.team, section.logos,
+  section.results, section.recommends, section.cta-bottom {
+    padding: 70px 0px;
   }
-  .header-address {
-    display: none;
+  .section-title {
+    font-size: 35px;
   }
-  .header-shedule {
-    display: none;
+  .section-title span.blue {
+    font-size: 30px;
   }
-  .header-phone__icon-wrapper {
-    width: 30px;
-    height: 30px;
+  .section-title span.slush {
+    font-size: 30px;
   }
-  .header-phone {
-    margin-top: 10px;
+  .header {
+    padding: 14px 0;
+  }
+  .header-phone__text {
+    margin-left: 10px;
+  }
+  .header-logo img {
+    padding-top: 10px;
   }
 }
 
 @media (max-width: 575px) {
-  .header {
-    padding-top: 25px;
+  .header-phone__icon-wrapper {
+    display: none;
+  }
+  .header-logo img {
+    padding-top: 3px;
   }
   section {
     padding: 60px 0px;
@@ -400,12 +455,19 @@ input {
   section .section-title {
     padding-bottom: 30px;
     font-size: 24px;
+    line-height: 30px;
+  }
+  section .section-title span.blue {
+    font-size: 20px;
+  }
+  section .section-title span.slush {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .header-phone__icon-wrapper {
-    display: none;
+  .header-logo img {
+    padding-top: 0;
   }
 }
 

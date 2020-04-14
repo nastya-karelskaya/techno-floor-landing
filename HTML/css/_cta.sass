@@ -2,12 +2,12 @@
 
   
 .cta
-  padding-bottom: 100px
+  padding-bottom: 130px
   margin-top: -160px
   &-item
     //margin-bottom: 30px
     background-color: $white
-    padding: 45px 22px
+    padding: 50px 22px
     box-shadow: 0 5px 30px 0 rgba(0,0,0,0.1)
     &1, &2, &3
     &__img
@@ -37,7 +37,8 @@
           // height: 12px
         &-title 
           display: inline-block
-          margin-right: 30px
+          margin-right: 40px
+          margin-bottom: 0
           color: $new-black
           font-size: 18px
           font-family: Ubuntu, san-serif
@@ -45,7 +46,7 @@
           font-weight: bold
 
       &-text 
-        margin-top: 29px
+        margin-top: 35px
         font-size: 13px
         line-height: 28px
         font-family: Montserrat, san-serif
@@ -88,4 +89,44 @@
         background: url(../img/service-5.png) center, no-repeat
         background-size: cover
 
+  &-bottom 
+    margin-top: 240px
+    padding-bottom: 200px
 
+    .cta 
+      &-item
+        box-shadow: none
+        padding: 0
+        &__descr
+          display: flex
+          flex-direction: row 
+          justify-content: flex-start
+          align-items: center  
+
+          &-icon 
+            img 
+              height: 40px
+          &-title 
+            color: $black
+            font-family: Ubuntu, san-serif 
+            font-size: 18px
+            margin-right: 33px
+            font-weight: bold
+
+        &__text 
+          margin-top: 40px
+          color: $new-black
+          font-family: Montserrat, san-serif 
+          font-size: 14px
+          line-height: 28px
+          min-height: 120px
+        &__btn  
+          margin-top: 30px
+          width: 100%
+        
+      &-btn 
+        margin: 0 auto 
+        margin-top: 99px
+        &__wrapper 
+          text-align: center
+        

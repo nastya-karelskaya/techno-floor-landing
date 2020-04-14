@@ -1,139 +1,312 @@
 .calculations 
+    padding: 170px 0px 
+    background-color: $gray-bg
+
+    .section
+        &-title
+
+        &-subtitle 
+            font-size: 18px
+            line-height: 26px
+            
+                
+        &-caption
+            position: absolute
+            bottom: -60px
+            right: 0
+            color: $text-black
+            font-family: Montserrat, san-serif
+            font-size: 18px
+            text-align: left
+            font-weight: normal
+
+
+    &-title 
+        position: relative
+        padding-right: 10px
 
     &-form 
-        &::before 
+        margin-top: 153px
+        
     
-
         &__select 
+            margin-right: 20px
+            width: 100%
+
+            label 
+                width: 100%
+            &-wrapper 
+    
+
+        &__time 
+            label 
+            input
+
+
+        &__square input, &__baget input, &__square label, &__baget label, &__time label, &__time input 
+    
+
         label 
-    
-
-&__time label 
-    
-
-&__footer 
-    
-
-&__button 
-    .button 
-    
-
-&__square input, &__baget input, &__square label, &__baget label, &__time label, &__time input 
-    
-
-.calculations-form label 
    
+        &__square
+            &-wrapper 
+                display: flex 
+                flex-direction: row 
+                justify-content: space-between
+            label 
+                color: $new-black
+                font-family: Montserrat, san-serif
+                font-size: 14px
+                width: 100%
+            input 
+                width: 100%
+                margin-top: 30px
+                background-color: #e5e5e5
+                
+            &-output
+                color: $new-black
+                font-family: Ubuntu, san-serif
+                font-size: 14px
+                font-weight: bold
 
-
-.calculations-form__time input 
-   
-
-
-.calculations-form__square,.calculations-form__baget 
     
-
-
-.calculations-form__square input,.calculations-form__baget input 
   
+            input[type="range"]
+                -webkit-appearance: none
+                width: 100%
+                display: block
+                outline: 0
+    
+                &:focus
+                    outline: 0
+                &::-webkit-slider-runnable-track
+                    width: 100%
+                    height: 2px
+                    cursor: pointer
+                    animate: .2s
+                    background: $blue
 
+                &::-webkit-slider-thumb
+                    border-radius: 50%
+                    background-color: $blue
+                    -webkit-box-shadow: 0 5px 29px 0 $gray-bg
+                    box-shadow: 0 5px 29px 0 $gray-bg
+                    height: 17px
+                    width: 17px
+                    border-radius: 50%
+                    cursor: pointer
+                    -webkit-appearance: none
+                    margin-top: -8px
+                    &::before 
+                        height: 21px
+                        width: 21px
+                        background-color: $black
 
-.calculations-form__square input[type="range"],.calculations-form__baget input[type="range"] 
+    
+                &::-moz-range-track
+                    width: 100%
+                    height: 8.4px
+                    cursor: pointer
+                    animate: .2s
+                    box-shadow: 1px 1px 1px #000,0px 0 1px #0d0d0d
+                    background: #3071a9
+                    border-radius: 1.3px
+                    border: .2px solid #010101
+
+                &::-moz-range-thumb
+                    box-shadow: 1px 1px 1px #000,0px 0 1px #0d0d0d
+                    border: 1px solid #000
+                    height: 36px
+                    width: 16px
+                    border-radius: 3px
+                    background: #fff
+                    cursor: pointer
+    
+                &::-ms-track
+                    width: 100%
+                    height: 8.4px
+                    cursor: pointer
+                    animate: .2s
+                    background: transparent
+                    border-color: transparent
+                    border-width: 16px 0
+                    color: transparent
+
+                &::-ms-fill-lower  
+                    background: #2a6495
+                    border: .2px solid #010101
+                    border-radius: 2.6px
+                    box-shadow: 1px 1px 1px #000,0px 0 1px #0d0d0d
+
+                &::-ms-fill-upper 
+                    background: #3071a9
+                    border: .2px solid #010101
+                    border-radius: 2.6px
+                    box-shadow: 1px 1px 1px #000,0px 0 1px #0d0d0d
     
 
+                &::-ms-thumb 
+                    box-shadow: 1px 1px 1px #000,0px 0 1px #0d0d0d
+                    border: 1px solid #000
+                    height: 36px
+                    width: 16px
+                    border-radius: 3px
+                    background: #fff
+                    cursor: pointer
+    
 
-.calculations-form__square input[type="range"]:focus,.calculations-form__baget input[type="range"]:focus 
+                &:focus::-ms-fill-lower 
+                    background: #3071a9
+    
+                &:focus::-ms-fill-upper
+                    background: #367ebd
+    
+
+        &__footer 
+            margin-top: 70px  
+        
+        &__check
+            margin-top: 80px
+            padding-left: 0
+            // background: $white
+            // width: 31px
+            // height: 31px
+            label 
+                color: $text-black 
+                font-size: 14px
+                font-family: Montserrat, san-serif
+                display: block
+                position: relative
+                padding-left: 55px
+                padding-top: 5px
+                margin-bottom: 12px
+                cursor: pointer
+                
+                -webkit-user-select: none
+                -moz-user-select: none
+                -ms-user-select: none
+                user-select: none
+                &:hover input ~ .checkmark 
+                    background-color: #ccc
+
+            input 
+                position: absolute
+                opacity: 0
+                cursor: pointer
+                height: 0
+                width: 0
+                &:checked ~ .checkmark 
+                    // background-color: #2196F3
+                &:checked ~ .checkmark:after 
+                    display: block
+
+
+            .checkmark 
+                position: absolute
+                top: 0
+                left: 0
+                height: 31px
+                width: 31px
+                background-color: #eee
+                &:after 
+                    content: ""
+                    position: absolute
+                    //display: none
+                    left: 8px
+                    top: 10px
+                    width: 16px
+                    height: 8px
+                    border: solid $blue
+                    border-width: 3px 3px 0 0
+                    -webkit-transform: rotate(135deg)
+                    -ms-transform: rotate(135deg)
+                    transform: rotate(135deg)
+                    // transform: scale(-1, 1)
+                    
+
+
+        &__button 
+            width: 100%
+            margin-top: 60px
+            
+            &-wrapper 
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
+                margin-top: 60px
+
+    .custom-select 
+        position: relative
+        border: 0
+        background-color: transparent
+        width: 210px
+        padding-left: 0
+        display: none
+        select 
+            display: none
+
+    .select
+        background-color: $white
+        padding: 27px 123px 27px 39px
+        label 
+            color: $text-black
+            font-family: Montserrat, san-serif
+            font-size: 14px
+       
+        &-selected 
+            background-color: transparent
+            display: none
+            &:after 
+                position: absolute
+                content: ""
+                top: 3px
+                right: 10px
+                width: 30px
+                height: 30px
+                border-color: #fff transparent transparent transparent
+                background: #f5f5f5 url(../images/form/arrow.png) no-repeat center
+   
+        &.select-arrow-active
+            &:after 
+
+        &-items 
+            position: absolute
+            background-color: DodgerBlue
+            top: 105%
+            left: 83px
+            right: 0
+            z-index: 99
+            width: 100%
+            border-radius: 10px
+            margin-top: 7px
+            div
+                &:hover
+    
+            &::before 
+                position: absolute
+                content: ''
+                top: -15px
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: DodgerBlue
+                border-radius: 50%
+                z-index: -1
+                -webkit-clip-path: polygon(0 0,100% 0,100% 92%,56% 92%,51% 100%,46% 92%,0 92%)
+                clip-path: polygon(0 0,100% 0,100% 92%,56% 92%,51% 100%,46% 92%,0 92%)
+                -webkit-transform: rotate(180deg)
+                -ms-transform: rotate(180deg)
+                transform: rotate(180deg)
+    
+            &:first-child
+                height: 102%
+                color: black 
+    
+
+        &-hide 
+            display: none
    
 
-
-.calculations-form__square input[type="range"]::-webkit-slider-runnable-track,.calculations-form__baget input[type="range"]::-webkit-slider-runnable-track 
-    
-
-
-.calculations-form__square input[type="range"]::-webkit-slider-thumb,.calculations-form__baget input[type="range"]::-webkit-slider-thumb 
-    
-
-
-.calculations-form__square input[type="range"]::-moz-range-track,.calculations-form__baget input[type="range"]::-moz-range-track 
-    
-
-
-.calculations-form__square input[type="range"]::-moz-range-thumb,.calculations-form__baget input[type="range"]::-moz-range-thumb 
-    
-
-
-.calculations-form__square input[type="range"]::-ms-track,.calculations-form__baget input[type="range"]::-ms-track 
-    
-
-
-.calculations-form__square input[type="range"]::-ms-fill-lower,.calculations-form__baget input[type="range"]::-ms-fill-lower 
-    
-
-
-.calculations-form__square input[type="range"]::-ms-fill-upper,.calculations-form__baget input[type="range"]::-ms-fill-upper 
-    
-
-.calculations-form__square input[type="range"]::-ms-thumb,.calculations-form__baget input[type="range"]::-ms-thumb 
-    
-
-.calculations-form__square input[type="range"]:focus::-ms-fill-lower,.calculations-form__baget input[type="range"]:focus::-ms-fill-lower 
-    
-
-
-.calculations-form__square input[type="range"]:focus::-ms-fill-upper,.calculations-form__baget input[type="range"]:focus::-ms-fill-upper 
-    
-
-
-.calculations-form__square-output,.calculations-form__baget-output 
-    
-
-.calculations-form__baget 
-   
-
-
-.calculations-form__select-wrapper 
-    
-
-
-.calculations .custom-select 
-    
-
-
-.calculations .custom-select select 
-    
-
-
-.calculations .select-selected 
-    
-
-
-.calculations .select-selected:after 
-   
-
-
-.calculations .select-selected.select-arrow-active:after 
-    
-
-
-.calculations .select-items div,.calculations .select-selected 
-    
-
-
-.calculations .select-items div 
-    
-
-.calculations .select-items 
-   
-
-
-.calculations .select-items::before 
-    
-
-.calculations .select-items:first-child 
-    
-
-
-.calculations .select-hide 
-   
-
-.calculations .select-items div:hover,.calculations .same-as-selected 
+    .same-as-selected 
    

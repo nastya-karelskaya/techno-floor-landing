@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
   <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
 
@@ -30,7 +32,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-12 col-md-4 col-xl-4">
+        <div class="col-5 col-lg-3 col-xl-4 top-logo">
           <div class="header-left">
             <div class="header-logo">
               <img src="img/top-logo.png" class="header-logo_image" alt="Логотип">
@@ -41,7 +43,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-4 col-xl-5">
+        <div class="col-12 col-md-4 col-lg-5 col-xl-5 pl-0 pr-0 d-none d-lg-block">
           <div class="header-center">
             <div class="header-menu">
               <ul>
@@ -62,7 +64,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-4 col-xl-3">
+        <div class="col-7 col-sm-6 col-lg-4 col-xl-3">
           <div class="header-right">
             <div class="header-phone">
               <div class="header-phone__icon-wrapper">
@@ -103,7 +105,7 @@
             </div> -->
 
           <div class="main-descr">
-            <h2 class="main-descr__txt">
+            <h2 class="main-subtitle">
               Для паркингов, ресторанов, офисов, больниц, <br>
               торговых центров и промышленных помещений
             </h2>
@@ -131,7 +133,7 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-12 col-sm-6 col-xl-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
           <div class="cta-item cta-item1">
             <div class="cta-item__descr">
               <div class="cta-item__descr-top">
@@ -159,7 +161,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-xl-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
           <div class="cta-item cta-item1">
             <div class="cta-item__descr">
               <div class="cta-item__descr-top">
@@ -187,7 +189,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-xl-4">
+        <div class="col-12 col-lg-4 ">
           <div class="cta-item cta-item1">
             <div class="cta-item__descr">
               <div class="cta-item__descr-top">
@@ -225,7 +227,7 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-12 col-sm-6 col-xl-6">
+        <div class="col-12 col-md-6 col-xl-6">
           <h3 class="about-title about-title_left">
             Чем занимается наша компания
           </h3>
@@ -249,11 +251,11 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-1 col-xl-1">
+        <div class="col-12 col-md-1 col-xl-1 d-none d-xl-block ">
           
         </div>
 
-        <div class="col-12 col-sm-5 col-xl-5">
+        <div class="col-12 col-md-6 col-xl-5">
           <h3 class="about-title about-title_right">
             Работаем совместно
           </h3>
@@ -312,9 +314,6 @@
           <div class="row">
             <div class="col-12 col-md-5">
               <div class="services-slider__info">
-                <div class="services-slider__info-icon">
-                  <img src="img/main/services-msg.png" alt="">
-                </div>
                 <h2 class="section-title services-slider__info-title">
                   Качественный <br>
                   сервис
@@ -386,18 +385,18 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-12 col-sm-4 col-xl-4">
+        <div class="col-12 col-md-5 col-xl-4">
           <h3 class="section-title section-title_black toget-title">
-            Вы <br> получаете <span>/</span>
+            Вы <br> получаете <span class="slush">/</span>
           </h3>
           <h4 class="section-subtitle toget-subtitle">
             Предоставляем до 5 лет расширенной
             гарантии, на проделанную работу
           </h4>
         </div>
-        <div class="col-12 col-sm-1 col-xl-1"></div>
+        <div class="col-12 col-sm-1 d-none d-xl-block col-xl-1"></div>
 
-        <div class="col-12 col-sm-7 col-xl-7">
+        <div class="col-12 col-md-7 col-xl-7">
           <div class="row">
             <div class="col-12 col-lg-6">
               <div class="toget-item">
@@ -511,37 +510,42 @@
       <div class="row">
         <div class="col-12">
           <div class="row">
-            <div class="col-6">
-              <h3 class="section-title section-title_black ">
-                Предварительный расчет <br> стоимости пола
-              </h3>
-              <span>
-                в 3 клика
-              </span>
-            </div>
-            <div class="col-2"></div>
-            <div class="col-4">
-              <h4 class="section-subtitle">
-                Просто введите данные в калькулятор
-и кликните на “Расчет стоимости”
-              </h4>
+            <div class="col-12">
+              <div class="section-title__wrapper">
+                <h3 class="section-title section-title_black calculations-title">
+                  Предварительный <br> расчет  стоимости пола
+                  <div class="section-caption">
+                    в 3 клика
+                  </div>
+                </h3>
+              
+                <h4 class="section-subtitle calculations-subtitle">
+                  Просто введите данные в калькулятор <br>
+  и кликните на “Расчет стоимости”
+                </h4>
+                
+              </div>
+              
             </div>
           </div>
           
          
           <form class="calculations-form" id="calc-form" method="post">
             <div class="calculations-form__square">
-              <label for="input_square" class="square">
-                Площадь пола:
-              </label>
+              <div class="calculations-form__square-wrapper">
+                <label for="input_square" class="square">
+                  Площадь пола:
+                </label>
+                <output name="rangeVal" class="calculations-form__square-output square">0</output>
+              </div>
               <input type="range" step="10" min="0" max="40000" value="0" id="input_square" name="square"
                 data-thumbwidth="10">
-              <output name="rangeVal" class="calculations-form__square-output square">0</output>
+              
             </div>
            
             <div class="calculations-form__footer">
               <div class="row">
-                <div class="col-4 pr-4">
+                <div class="col-12 col-md-4 ">
                   <div class="calculations-form__select">
                     <label for="input_material" class="select">
                       Выберите материал
@@ -565,7 +569,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 pr-4">
+                <div class="col-12 col-md-4 ">
                   <div class="calculations-form__select">
                     <label for="input_material" class="select">
                       Выберите систему
@@ -591,7 +595,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 pr-4">
+                <div class="col-12 col-md-4 ">
                   <div class="calculations-form__select">
                     <label for="input_material" class="select">
                       Выберите функцию пола
@@ -626,19 +630,28 @@
               </div>
 
               <div class="row">
-                <div class="col-4">
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input calculations-form__check-i" id="calculations-form__check">
-                    <label class="calculations-form__check-l" for="calculations-form__check">Требуется выравнивание основания</label>
-                  </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                  <!-- <div class="calculations-form__button-wrapper"> -->
+                    
+                    <div class="form-check calculations-form__check">
+                      <label class="calculations-form__check-l" for="calculations-form__check">Требуется выравнивание основания
+                        <input type="checkbox" class="form-check-input calculations-form__check-i" id="calculations-form__check">
+                        <span class="checkmark"></span>
+                      </label>
+                      <!-- <input type="checkbox" class="form-check-input calculations-form__check-i" id="calculations-form__check"> -->
+                      <!-- <label class="calculations-form__check-l" for="calculations-form__check"></label> -->
+                    </div>
                 </div>
-                <div class="col-4">
-                  <div class="calculations-form__button">
-                    <a class="button button-c calc-form__button" data-toggle="modal" data-target="#calcModal">
-                      РАССЧИТАТЬ СТОИМОСТЬ
-                    </a>
-                  </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    
+                      <button class="button button_filled calculations-form__button" data-toggle="modal" data-target="#calcModal">
+                        РАССЧИТАТЬ СТОИМОСТЬ
+                      </button>
+                    
+
                 </div>
+                  
+                <!-- </div> -->
               </div>
             </div>
 
@@ -654,16 +667,21 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="digits-title">
-            О нас <br>
-            в цифрах
+          <div class="section-title__wrapper">
+            <div class="section-title section-title_black digits-title">
+              О нас <br>
+              в цифрах <span class="slush">/</spanclass="slush">
+            </div>
+            <div class="section-subtitle__wrapper">
+              <div class="caption">2х</div> 
+              <div class="section-subtitle digits-subtitle">
+                Удваиваемся каждый <br>
+                год по всем показателям  
+              </div>         
+            </div>
+
           </div>
-          <div class="digits-subtitle">
-           <span>2х</span> Удваиваемся каждый
-            год по всем показателям
-            
-            
-          </div>
+          
         </div>
         <div class="col-12">
           <div class="digits-items">
@@ -675,7 +693,7 @@
                 10 000+
               </div>
               <div class="digits-item__descr">
-                М2 поверхности
+                М2 поверхности <br>
                 реализуем каждый год
               </div>
             </div>
@@ -687,7 +705,7 @@
                 170
               </div>
               <div class="digits-item__descr">
-                Организаций взаимодействует
+                Организаций взаимодействует <br>
                 с нами ежегодно
               </div>
             </div>
@@ -699,7 +717,7 @@
                 10
               </div>
               <div class="digits-item__descr">
-                Лет опыта в области
+                Лет опыта в области <br>
                 отделки помещений
               </div>
             </div>
@@ -711,7 +729,7 @@
                 0%
               </div>
               <div class="digits-item__descr">
-                Предоплаты. Начинаем
+                Предоплаты. Начинаем <br>
                 работу без авансов
               </div>
             </div>
@@ -727,84 +745,86 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="team-title">
+          <div class="section-title section-title_black team-title">
             Вашим объектом займутся <br>
  
-            <span>12 специалистов</span> узкого профиля
+            <span class="blue">12 специалистов</span> узкого профиля
           </div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-12">
-          
-              <div class="team-slider">
-                <div class="team-slider__item1">
-                  <div class="slider-photo">
-                    <img src="img/7/t-1.png" alt="">
+          <div class="team-slider__wrapper">
+            <div class="team-slider">
+              <div class="team-slider__item team-slider__item1">
+                <div class="slider-photo">
+                  <img src="img/7/t1.png" alt="">
+                </div>
+                <div class="slider-descr">
+                  <div class="slider-descr__name">
+                    Кирилл Теймурович
                   </div>
-                  <div class="slider-descr">
-                    <div class="slider-descr__name">
-                      Кирилл Теймурович
-                    </div>
-                    <div class="slider-descr__work">
-                      директор компании
-                    </div>
-
+                  <div class="slider-descr__work">
+                    директор компании
                   </div>
 
                 </div>
-
-                <div class="team-slider__item2">
-                  <div class="slider-photo">
-                    <img src="img/7/t-2.png" alt="">
-                  </div>
-                  <div class="slider-descr">
-                    <div class="slider-descr__name">
-                      Мария Иванович
-                    </div>
-                    <div class="slider-descr__work">
-                      менеджер
-                    </div>
-
-                  </div>
-
-                </div>
-
-                <div class="team-slider__item3">
-                  <div class="slider-photo">
-                    <img src="img/7/t-3.png" alt="">
-                  </div>
-                  <div class="slider-descr">
-                    <div class="slider-descr__name">
-                      Богданов Виктор
-                    </div>
-                    <div class="slider-descr__work">
-                      инженер
-                    </div>
-
-                  </div>
-
-                </div>
-
-                <div class="team-slider__item4">
-                  <div class="slider-photo">
-                    <img src="img/7/t-4.png" alt="">
-                  </div>
-                  <div class="slider-descr">
-                    <div class="slider-descr__name">
-                      Наталья Конано
-                    </div>
-                    <div class="slider-descr__work">
-                      менеджер
-                    </div>
-
-                  </div>
-
-                </div>
-                
 
               </div>
+
+              <div class="team-slider__item team-slider__item2">
+                <div class="slider-photo">
+                  <img src="img/7/t2.png" alt="">
+                </div>
+                <div class="slider-descr">
+                  <div class="slider-descr__name">
+                    Мария Иванович
+                  </div>
+                  <div class="slider-descr__work">
+                    менеджер
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="team-slider__item team-slider__item3">
+                <div class="slider-photo">
+                  <img src="img/7/t3.png" alt="">
+                </div>
+                <div class="slider-descr">
+                  <div class="slider-descr__name">
+                    Богданов Виктор
+                  </div>
+                  <div class="slider-descr__work">
+                    инженер
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="team-slider__item team-slider__item4">
+                <div class="slider-photo">
+                  <img src="img/7/t4.png" alt="">
+                </div>
+                <div class="slider-descr">
+                  <div class="slider-descr__name">
+                    Наталья Конано
+                  </div>
+                  <div class="slider-descr__work">
+                    менеджер
+                  </div>
+
+                </div>
+
+              </div>
+              
+
+            </div>
+          </div>
+              
 
               <div class="team-arrows">
                 <div class="slider-arrow__right team-arrows__right slick-arrow"></div>
@@ -822,15 +842,15 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="logos-title">
+          <div class="section-title section-title_black logos-title">
             Нас выбирают <br> лидеры рынка 
-            <span>/</span> 
+            <span class="slush">/</span> 
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-          <div class="logo-items">
+          <div class="logos-items">
             <div class="logos-item">
               <img src="img/8/l-1.png" alt="">
             </div>
@@ -846,10 +866,7 @@
             <div class="logos-item">
               <img src="img/8/l-5.png" alt="">
             </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="logo-items">
+          
             <div class="logos-item">
               <img src="img/8/l-6.png" alt="">
             </div>
@@ -878,7 +895,7 @@
 
       <div class="row">
         <div class="col-12">
-          <div class="results-title">
+          <div class="section-title results-title">
             Результаты, <br>
                   которыми <br>
                   мы гордимся 
@@ -888,7 +905,41 @@
       <div class="row">
         <div class="col-12">
           <div class="row">
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-xl-7">
+              <div class="results-slider">
+                <div class="results-slider__item results-slider__item1">
+                  <div class="slider-photo">
+                    <img src="img/9/r-1.png" alt="">
+                  </div>
+                  <div class="slider-descr">
+                    <div class="slider-quote">
+                      <img src="img/main/results-quote.png" alt="">
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="results-slider__item results-slider__item2">
+                  <div class="slider-photo">
+                    <img src="img/main/results-slider-2.jpeg" alt="">
+                  </div>
+                  <div class="slider-descr">
+                    <div class="slider-quote">
+                      <img src="img/main/results-quote.png" alt="">
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="results-arrows">
+                <div class="slider-arrow__right results-arrows__right slick-arrow"></div>
+                <div class="slider-arrow__left results-arrows__left slick-arrow"></div>
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-5">
               <div class="results-slider__info">
                 
                 <div class="results-slider__info-title">
@@ -930,39 +981,7 @@
 
               </div>
             </div>
-            <div class="col-12 col-md-7">
-              <div class="results-slider">
-                <div class="results-slider__item1">
-                  <div class="slider-photo">
-                    <img src="img/main/results-slider-1.jpeg" alt="">
-                  </div>
-                  <div class="slider-descr">
-                    <div class="slider-quote">
-                      <img src="img/main/results-quote.png" alt="">
-                    </div>
-
-                  </div>
-
-                </div>
-                <div class="results-slider__item2">
-                  <div class="slider-photo">
-                    <img src="img/main/results-slider-2.jpeg" alt="">
-                  </div>
-                  <div class="slider-descr">
-                    <div class="slider-quote">
-                      <img src="img/main/results-quote.png" alt="">
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="results-arrows">
-                <div class="slider-arrow__right results-arrows__right slick-arrow"></div>
-                <div class="slider-arrow__left results-arrows__left slick-arrow"></div>
-              </div>
-            </div>
+            
 
           </div>
         </div>
@@ -976,11 +995,11 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="recommends-title">
+          <div class="section-title section-title_black recommends-title">
             Нас <br>
 рекомендуют 
  
-            <span></span>
+            <span class="slush">/</span>
           </div>
         </div>
       </div>
@@ -989,7 +1008,7 @@
         <div class="col-12">
           
               <div class="recommends-slider">
-                <div class="recommends-slider__item1">
+                <div class="recommends-slider__item recommends-slider__item1">
                   <div class="slider-photo">
                     <img src="img/10/r-1.png" alt="">
                   </div>
@@ -999,7 +1018,7 @@
 
                 </div>
 
-                <div class="recommends-slider__item2">
+                <div class="recommends-slider__item recommends-slider__item2">
                   <div class="slider-photo">
                     <img src="img/10/r-2.png" alt="">
                   </div>
@@ -1009,7 +1028,7 @@
 
                 </div>
 
-                <div class="recommends-slider__item3">
+                <div class="recommends-slider__item recommends-slider__item3">
                   <div class="slider-photo">
                     <img src="img/10/r-3.png" alt="">
                   </div>
@@ -1019,7 +1038,7 @@
 
                 </div>
 
-                <div class="recommends-slider__item4">
+                <div class="recommends-slider__item recommends-slider__item4">
                   <div class="slider-photo">
                     <img src="img/10/r-4.png" alt="">
                   </div>
@@ -1029,7 +1048,7 @@
 
                 </div>
 
-                <div class="recommends-slider__item4">
+                <!-- <div class="recommends-slider__item recommends-slider__item4">
                   <div class="slider-photo">
                     <img src="img/10/r-5.png" alt="">
                   </div>
@@ -1037,7 +1056,7 @@
                     МЕГА БИЛД АСТАНА
                   </div>
 
-                </div>
+                </div> -->
                 
 
               </div>
@@ -1057,74 +1076,81 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-12 col-sm-6 col-xl-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="cta-item cta-item1">
             <div class="cta-item__descr">
               
-              <div class="cta-item__title">
+              <div class="cta-item__descr-title">
                 Есть проект
               </div>
-              <div class="cta-item__icon">
+              <div class="cta-item__descr-icon">
                 <img src="img/10/i-1.png" alt="">
               </div>
-              <div class="cta-item__descr">
-                У вас есть проект и финансирование,
-                но нет подрядчика. Обращайтесь к нам,
-                мы готовы приступить.
-              </div>
-              <div class="cta-item__btn">
-                ОБСУДИТЬ ПРОЕКТ
-              </div>
             </div>
+            <div class="cta-item__text">
+              У вас есть проект и финансирование,
+              но нет подрядчика. Обращайтесь к нам,
+              мы готовы приступить.
+            </div>
+            <button class="button cta-item__btn">
+              ОБСУДИТЬ ПРОЕКТ
+            </button>
+            
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-xl-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="cta-item cta-item1">
             <div class="cta-item__descr">
               
-              <div class="cta-item__title">
+              <div class="cta-item__descr-title">
                 Нужна консультация
               </div>
-              <div class="cta-item__icon">
+              <div class="cta-item__descr-icon">
                 <img src="img/10/i-2.png" alt="">
               </div>
-              <div class="cta-item__descr">
-                Нужна консультация специалиста, обратитесь
+            </div>
+            <div class="cta-item__text">
+              Нужна консультация специалиста, обратитесь
 к нам удобным способом. Общение с нами
 ни к чему вас не обязывает
-              </div>
-              <div class="cta-item__btn">
-                ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
-              </div>
             </div>
+            <button  class="button cta-item__btn">
+              ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+            </button>
+            
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-xl-4">
+        <div class="col-12  col-lg-4 mb-4">
           <div class="cta-item cta-item1">
             <div class="cta-item__descr">
-              <div class="cta-item__icon">
-                <img src="img/10/i-3.png" alt="">
-              </div>
-              <div class="cta-item__title">
+              
+              <div class="cta-item__descr-title">
                 Благотворительный проект
               </div>
-              <div class="cta-item__descr">
-                Хотите предложить благотворительный
-проект, мы с радостью обсудим.
-              </div>
-              <div class="cta-item__btn">
-                ПРЕДЛОЖИТЬ ПРОЕКТ
+              <div class="cta-item__descr-icon">
+                <img src="img/10/i-3.png" alt="">
               </div>
             </div>
+            <div class="cta-item__text">
+              Хотите предложить благотворительный <br>
+проект, мы с радостью обсудим.
+            </div>
+            <button  class="button cta-item__btn">
+              ПРЕДЛОЖИТЬ ПРОЕКТ
+            </button>
+            
           </div>
         </div>
 
         <div class="col-12">
-          <div class="cta-btn">
-            РАССЧИТАТЬ СТОИМОСТЬ ПРОЕКТА НА КАЛЬКУЛЯТОРЕ
+          <div class="cta-btn__wrapper">
+            <button  class="button button_filled cta-btn">
+              РАССЧИТАТЬ СТОИМОСТЬ ПРОЕКТА НА КАЛЬКУЛЯТОРЕ
+            </button>
           </div>
+          
         </div>
 
 
@@ -1135,30 +1161,30 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <div class="footer-logo">
             <img src="img/bottom-logo.png" alt="">
           </div>
           <div class="footer-descr">
-            <span>
+            <div class="footer-descr__img">
               <img src="img/compass.png" alt="">
-            </span>
-            <span>
+            </div>
+            <div class="footer-descr__text">
               Санкт-Петербург, ул. Новгородская,
 дом 23, Литер А, помещение 226Н, офис 1Н.
-            </span>
+            </div>
           </div>
         </div>
       
     
-        <div class="col-6">
-          <div class="footer-socilas">
-            <div class="footer-socilas__item">
-              <img src="img/wa.png" alt=""></div>
-            <div class="footer-socilas__item">
-              <img src="img/yg.png" alt=""></div>
-            <div class="footer-socilas__item">
-              <img src="img/insta.png" alt=""></div>
+        <div class="col-12 col-md-6">
+          <div class="footer-socials">
+            <div class="footer-socials__item">
+              <img src="img/wa.png" alt="Мы в WhatsApp" title="Мы в WhatsApp"></div>
+            <div class="footer-socials__item">
+              <img src="img/tg.png" alt="Мы в Telegram" title="Мы в Telegram"></div>
+            <div class="footer-socials__item">
+              <img src="img/insta.png" alt="Мы в Instagram" title="Мы в Instagra"></div>
           </div>
           <div class="footer-info">
             <div class="phone">
@@ -1193,16 +1219,18 @@
         <div class="col-12">
           <hr>
         </div>
-        <div class="col-6">
-          <div class="footer-copy">
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <span class="footer-copy">
             ООО СТРОЙТЕХНОЛОГИЯ
-          </div>
-          <div class="footer-rekv">
+          </span>
+          <span class="footer-rekv">
             РЕКВИЗИТЫ ОРГАНИЗАЦИИ
-          </div>
+          </span>
         </div>
 
-        <div class="col-6">
+        <div class="col-12 col-md-6 text-center text-md-right">
           
           <div class="footer-policy">
             ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
@@ -1228,23 +1256,22 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 
-
-
-
+  <script src="js/jquery.maskedinput.min.js"></script>
 
 
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -1252,7 +1279,67 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
+
+
+
+    <script>
+      $('.portfolio-slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        autoplay: true,
+        //arrows: false,
+        prevArrow: $('.portfolio-arrows__left'),
+        nextArrow: $('.portfolio-arrows__right'),
+        responsive: [
+  
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+  
+      $('.reviews-slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        slidesToScroll: 2,
+        autoplay: true,
+        //arrows: false,
+        prevArrow: $('.reviews-arrows__left'),
+        nextArrow: $('.reviews-arrows__right'),
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToScroll: 1,
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 575,
+            settings: {
+  
+              centerMode: false
+  
+            }
+          }
+        ]
+      });
+    </script>
+
+
+
 </body>
 
 </html>

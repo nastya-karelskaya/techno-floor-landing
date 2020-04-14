@@ -12,15 +12,18 @@ button.button
   color: $btn-o
   font-family: Ubuntu, san-serif
   font-size: 10px
+  font-weight: bold
   text-transform: uppercase
   letter-spacing: 2px
   border: 1px solid $blue
   border-radius: 2px
   outline: none
-  padding: 27px
+  padding: 27px 10px
   background: transparent
   span 
     color: $blue
+    margin-top: 2px
+    display: block
 
 
   &.button_filled 
@@ -45,16 +48,29 @@ input
     font-weight: bold
     line-height: 50px
     text-align: left
+    &__wrapper
+      display: flex 
+      flex-direction: row 
+      justify-content: space-between
+      align-content: center
+      align-items: center
+      flex-wrap: wrap
 
     
     &_left 
     &_black
       color: $new-black
     span 
-      color: $blue
-      font-weight: bold
-      font-size: 50px
-      margin-left: 15px
+      &.blue
+        color: $blue
+        font-weight: bold
+        font-size: 50px
+        
+
+      &.slush
+        font-size: 35px
+        color: $blue
+        margin-left: 15px
 
 
   &-subtitle 
@@ -63,6 +79,21 @@ input
     font-size: 14px
     font-weight: bold
     text-align: left
+    
+
+    &__wrapper
+      display: flex 
+      flex-direction: row 
+      justify-content: space-between
+      align-content: center
+      align-items: center
+      .caption 
+        color: #4F4F57
+        font-size: 54px
+        font-family: Ubuntu, san-serif
+        font-weight: bold
+        margin-right: 23px
+
 
   
       
