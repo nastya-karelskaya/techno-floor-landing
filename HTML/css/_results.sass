@@ -12,10 +12,10 @@
     color: $white
 
   &-slider
-    margin-top: 70px
+    //margin-top: 70px
     &__item 
       img 
-        width: 100%
+        //width: 100%
     &__info
       margin-top: 70px
       &-title 
@@ -48,7 +48,125 @@
             font-family: Montserrat, sans-serif
             font-size: 50px
 
+  .slick 
+    &-list.draggable
+      padding: 0 0px 0px 240px !important
     
+  &-slider
+    position: absolute
+    width: 880px
+    left: -240px
+    top: 0
+    
+    &__wrapper 
+      position: relative
+      margin-top: 70px
+    &__item
+      
+      height: 400px
+      width: 100%
+      
+      margin: 0 20px
+      .slider-photo
+        // border-radius: 5px       
+        height: 100%
+        border-radius: 2px
+        width: 100%  
+        img 
+          width: 100%
+          height: auto
+          
+     
+      &1
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/9/r-1.png) center, no-repeat
+          background-size: cover
+        
+      &2
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/9/r-2.png) center, no-repeat
+          background-size: cover
+      &3
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/9/r-3.png) center, no-repeat
+          background-size: cover
+      &4
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/9/r-4.png) center, no-repeat
+          background-size: cover
+      &5
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/9/r-5.png) center, no-repeat
+          background-size: cover
+
+      &6
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/9/r-6.png) center, no-repeat
+          background-size: cover
+
+
+      &7
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/9/r-7.png) center, no-repeat
+          background-size: cover
+
+
+      &8
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/9/r-8.png) center, no-repeat
+          background-size: cover
+
+
+      &9
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/9/r-9.png) center, no-repeat
+          background-size: cover
+
+
+  &-arrows
+    position: absolute
+    top: 460px
+    left: 20px
+    width: 600px
+    height: 3px
+    background-color: #7b7b7b
+    &__left, &__right 
+      position: absolute
+      width: 200px
+      height: 7px
+      background-size: contain
+      top: -2px
+
+    &__left 
+      left: 0
+      background: url(../img/3/a-left.png) left no-repeat
+      
+      
+
+    &__right 
+      right: 0
+      background: url(../img/3/a-right.png) right no-repeat
+
+
+
 
 
 

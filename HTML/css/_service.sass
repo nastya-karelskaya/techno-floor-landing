@@ -1,5 +1,6 @@
 .services
   background: url(../img/gr-bg.jpg) center no-repeat
+  background-size: cover
   padding: 174px 0px
 
   &-info
@@ -19,68 +20,90 @@
           font-family: Montserrat, san-serif
           font-size: 16px
 
-
-
-
-  &-item
-    margin-bottom: 30px
-    &__img
-      border-radius: 5px
+  &-slider
+    position: absolute
+    width: 880px
+    &__wrapper 
+      position: relative
+    &__item
+      
+      height: 360px
       width: 100%
-      height: 252px
-      //max-height: 272px
-      img 
-        width: 100%
-        //height: 100%
-        height: 252px
+      
+      margin: 0 20px
+      .slider-photo
+        // border-radius: 5px       
+        height: 100%
+        border-radius: 2px
+        width: 100%  
+        img 
+          width: 100%
+          height: 360px
+     
+      &1
+        .slider-photo
+          // width: 100%
+          // height: 100%
+          background: url(../img/3/s1.jpeg) center, no-repeat
+          background-size: cover
         
-    &__descr
-      text-align: center
-      margin-top: 27px
-    &__icon
-      display: inline-block
-      vertical-align: middle
-      background: url(../img/services-icon.png) center no-repeat
-      width: 24px 
-      height: 12px
-    &__title 
-      display: inline-block
-      margin-left: 15px
-      //color: $indigo
-      font-size: 13px
-      text-transform: uppercase
-      font-weight: bold
+      &2
+        .slider-photo
+          // width: 100%
+          // height: 100%
+          background: url(../img/3/s2.jpeg) center, no-repeat
+          background-size: cover
+      &3
+        .slider-photo
+          // width: 100%
+          // height: 100%
+          background: url(../img/3/s3.jpeg) center, no-repeat
+          background-size: cover
+      &4
+        .slider-photo
+          // width: 100%
+          // height: 100%
+          background: url(../img/3/s4.jpeg) center, no-repeat
+          background-size: cover
+      &5
+        
+        .slider-photo
+          //width: 100%
+          height: 252px
+          background: url(../img/service-5.png) center, no-repeat
+          background-size: cover
 
-    &1
-      .services-item__img
-        // width: 100%
-        // height: 100%
-        background: url(../img/service-1.jpeg) center, no-repeat
-        background-size: cover
-      
-    &2
-      .services-item__img
-        // width: 100%
-        // height: 100%
-        background: url(../img/service-2.png) center, no-repeat
-        background-size: cover
-    &3
-      .services-item__img
-        // width: 100%
-        // height: 100%
-        background: url(../img/service-3.png) center, no-repeat
-        background-size: cover
-    &4
-      .services-item__img
-        // width: 100%
-        // height: 100%
-        background: url(../img/service-4.png) center, no-repeat
-        background-size: cover
-    &5
-      
-      .services-item__img
-        //width: 100%
-        height: 252px
-        background: url(../img/service-5.png) center, no-repeat
-        background-size: cover
 
+  &-arrows
+    position: absolute
+    top: 420px
+    left: 20px
+    width: 700px
+    height: 3px
+    background-color: #7b7b7b
+    &__left, &__right 
+      position: absolute
+      width: 200px
+      height: 7px
+      background-size: contain
+      top: -2px
+
+    &__left 
+      left: 0
+      background: url(../img/3/a-left.png) left no-repeat
+      
+      
+
+    &__right 
+      right: 0
+      background: url(../img/3/a-right.png) right no-repeat
+
+
+
+
+
+
+/******************************** /
+
+
+  

@@ -1,0 +1,76 @@
+@import 'variables'
+@import 'interface'
+
+
+
+.policy 
+  padding: 100px 0px
+  background-color: #dcdcdc
+  background-size: cover
+
+  &-title 
+    color: $black
+    font-family: Ubuntu, san-serif
+    font-size: 50px
+    font-weight: bold
+    line-height: 40px
+    margin-bottom: 50px
+    word-break: break-all
+
+  &-descr
+    margin-bottom: 45px
+      
+    h2 
+      color: $black
+      font-family: Ubuntu, san-serif
+      font-size: 30px
+      font-weight: bold
+      line-height: 30px
+      margin-bottom: 25px
+      word-break: break-all
+
+    p 
+      color: $black
+      font-family: Montserrat, san-serif
+      font-size: 15px
+      
+      line-height: 20px
+      a 
+        color: $blue 
+        font-weight: bold
+
+    ul 
+      padding-left: 40px
+      li 
+        color: $black
+        font-family: Montserrat, san-serif
+        font-size: 15px
+        
+        line-height: 20px
+
+
+
+
+@import 'footer'
+
+
+
+
+@import 'hovers-main'
+@import 'media-interface'
+
+@media(max-width: 991px)
+  .policy 
+    padding: 80px 0px
+
+
+@media(max-width: 767px)
+  .policy 
+    padding: 60px 0px
+    &-title 
+      font-size: 35px
+
+    h2 
+      font-size: 25px
+
+      

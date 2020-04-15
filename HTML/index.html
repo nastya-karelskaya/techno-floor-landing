@@ -112,9 +112,9 @@
 
           </div>
 
-          <button class="button button_filled" data-toggle="modal" data-target="#formModal">
+          <a class="button button_filled scroll-to-element" href="#calculations" >
             РАССЧИТАТЬ СТОИМОСТЬ НА КАЛЬКУЛЯТОРЕ
-          </button>
+          </a>
 
 
 
@@ -262,37 +262,61 @@
           <div class="about-logos">
             <div class="about-logos__half">
               <div class="about-logos__half-img">
-                <img src="img/2/l-1.png" alt="">
+                <a href="http://qtp.ru/" target="_blank">
+                  <img src="img/2/l-1.png" alt="">
+                </a>
+                
               </div>
               
               <div class="about-logos__half-img">
-                <img src="img/2/l-2.png" alt="">
+                <a href="https://www.tikkurila.ru/" target="_blank">
+                  <img src="img/2/l-2.png" alt="">
+                </a>
+                
               </div>
               
               <div class="about-logos__half-img">
-                <img src="img/2/l-3.png" alt="">
+                <a href="https://untec.ru/" target="_blank">
+                  <img src="img/2/l-3.png" alt="">
+                </a>
+                
               </div>
               
               <div class="about-logos__half-img">
-                <img src="img/2/l-4.png" alt="">
+                <a href="https://www.tnpgroup.ru/" target="_blank">
+                  <img src="img/2/l-4.png" alt="">
+                </a>
+                
               </div>
               
             </div>
             <div class="about-logos__half">
               <div class="about-logos__half-img">
-                <img src="img/2/l-5.png" alt="">
+                <a href="https://www.ingri.ru/" target="_blank">
+                  <img src="img/2/l-5.png" alt="">
+                </a>
+                
               </div>
               
               <div class="about-logos__half-img">
-                <img src="img/2/l-6.png" alt="">
+                <a href="https://www.basf.com/ru/ru.html" target="_blank">
+                  <img src="img/2/l-6.png" alt="">
+                </a>
+                
               </div>
               
               <div class="about-logos__half-img">
-                <img src="img/2/l-7.png" alt="">
+                <a href="" target="_blank">
+                  <img src="img/2/l-7.png" alt="">
+                </a>
+                
               </div>
               
               <div class="about-logos__half-img">
-                <img src="img/2/l-8.png" alt="">
+                <a href="https://rus.sika.com/" target="_blank">
+                  <img src="img/2/l-8.png" alt="">
+                </a>
+                
               </div>
               
             </div>
@@ -312,7 +336,7 @@
       <div class="row">
         <div class="col-12">
           <div class="row">
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-lg-5">
               <div class="services-slider__info">
                 <h2 class="section-title services-slider__info-title">
                   Качественный <br>
@@ -339,38 +363,34 @@
 
               </div>
             </div>
-            <div class="col-12 col-md-7">
-              <div class="services-slider">
-                <div class="services-slider__item1">
-                  <div class="slider-photo">
-                    <img src="img/main/services-slider-1.jpeg" alt="">
-                  </div>
-                  <div class="slider-descr">
-                    <div class="slider-quote">
-                      <img src="img/main/services-quote.png" alt="">
+            <div class="col-12 col-lg-7">
+
+              <div class="services-slider__wrapper">
+                <div class="services-slider">
+                  <div class="services-slider__item services-slider__item1">
+                    <div class="slider-photo">
+                      <!-- <img src="img/3/s1.jpeg" alt=""> -->
                     </div>
-
                   </div>
-
-                </div>
-                <div class="services-slider__item2">
-                  <div class="slider-photo">
-                    <img src="img/main/services-slider-2.jpeg" alt="">
+                  <div class="services-slider__item services-slider__item2">
+                    <div class="slider-photo">
+                      <!-- <img src="img/3/s2.jpeg" alt=""> -->
+                    </div>              
                   </div>
-                  <div class="slider-descr">
-                    <div class="slider-quote">
-                      <img src="img/main/services-quote.png" alt="">
-                    </div>
-
+                  <div class="services-slider__item services-slider__item2">
+                    <div class="slider-photo">
+                      <!-- <img src="img/3/s3.jpeg" alt=""> -->
+                    </div>              
                   </div>
                 </div>
-
+  
+                <div class="services-arrows slider-arrows">
+                  <div class="slider-arrows__right services-arrows__right slick-arrow"></div>
+                  <div class="slider-arrows__left services-arrows__left slick-arrow"></div>
+                </div>
               </div>
 
-              <div class="services-arrows">
-                <div class="slider-arrow__right services-arrows__right slick-arrow"></div>
-                <div class="slider-arrow__left services-arrows__left slick-arrow"></div>
-              </div>
+              
             </div>
 
           </div>
@@ -379,6 +399,8 @@
 
     </div>
   </section>
+
+  
 
 
   <section class="toget">
@@ -505,7 +527,7 @@
   </section>
 
 
-  <section class="calculations">
+  <section class="calculations" id="calculations">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -547,18 +569,19 @@
               <div class="row">
                 <div class="col-12 col-md-4 ">
                   <div class="calculations-form__select">
-                    <label for="input_material" class="select">
+                    <label for="input_material" class="select select_1">
                       Выберите материал
                     </label>
-                    <div class="custom-select">
+                    <div class="custom-select custom-select_1">
                       <select name="material" class="input_select" id="input_material">
+                        <option></option>
                         <option>Не определился</option>
                         <option>Полимерцементный</option>
                         <option>Полиуретановый</option>
                         <option>Эпоксидный</option>
                        
                       </select>
-                      <div class="select-selected">Не определился</div>
+                      <!-- <div class="select-selected">Не определился</div> -->
                       <div class="select-items select-hide">
                         <div>Полимерцементный</div>
                         <div>Полиуретановый</div>
@@ -571,11 +594,12 @@
 
                 <div class="col-12 col-md-4 ">
                   <div class="calculations-form__select">
-                    <label for="input_material" class="select">
+                    <label for="input_material" class="select select_2">
                       Выберите систему
                     </label>
-                    <div class="custom-select">
+                    <div class="custom-select custom-select_2">
                       <select name="material" class="input_select" id="input_material">
+                        <option></option>
                         <option>Не определился</option>
                         <option>Высоконаполнительная</option>
                         <option>Обеспыливание</option>
@@ -583,7 +607,7 @@
                         <option>Наливная</option>
                         
                       </select>
-                      <div class="select-selected">Не определился</div>
+                      <!-- <div class="select-selected">Не определился</div> -->
                       <div class="select-items select-hide">
                         <div>Высоконаполнительная</div>
                         <div>Обеспыливание</div>
@@ -597,11 +621,12 @@
 
                 <div class="col-12 col-md-4 ">
                   <div class="calculations-form__select">
-                    <label for="input_material" class="select">
+                    <label for="input_material" class="select select_3">
                       Выберите функцию пола
                     </label>
-                    <div class="custom-select">
+                    <div class="custom-select  custom-select_3">
                       <select name="material" class="input_select" id="input_material">
+                        <option></option>
                         <option>Спец. назначение (Экстримальные
                           нагрузки, аттестация)</option>
                         <option>Экотребования (Пищевая
@@ -612,8 +637,8 @@
                         <option>Декоративная (Ресторан, Магазин)</option>
                         
                       </select>
-                      <div class="select-selected">Спец. назначение (Экстримальные
-                        нагрузки, аттестация)</div>
+                      <!-- <div class="select-selected">Спец. назначение (Экстримальные
+                        нагрузки, аттестация)</div> -->
                       <div class="select-items select-hide">
                         <div>Экотребования (Пищевая
                           промышленность, больница, дети)
@@ -644,7 +669,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-4">
                     
-                      <button class="button button_filled calculations-form__button" data-toggle="modal" data-target="#calcModal">
+                      <button class="button button_filled calculations-form__button" >
                         РАССЧИТАТЬ СТОИМОСТЬ
                       </button>
                     
@@ -756,10 +781,14 @@
       <div class="row">
         <div class="col-12">
           <div class="team-slider__wrapper">
+
             <div class="team-slider">
               <div class="team-slider__item team-slider__item1">
                 <div class="slider-photo">
-                  <img src="img/7/t1.png" alt="">
+                  <!-- <img src="img/7/t1.png" alt=""> -->
+                  <a href="mailto:" class="button">
+                    связаться
+                  </a>
                 </div>
                 <div class="slider-descr">
                   <div class="slider-descr__name">
@@ -775,7 +804,10 @@
 
               <div class="team-slider__item team-slider__item2">
                 <div class="slider-photo">
-                  <img src="img/7/t2.png" alt="">
+                  <!-- <img src="img/7/t2.png" alt=""> -->
+                  <a href="mailto:" class="button">
+                    связаться
+                  </a>
                 </div>
                 <div class="slider-descr">
                   <div class="slider-descr__name">
@@ -791,7 +823,10 @@
 
               <div class="team-slider__item team-slider__item3">
                 <div class="slider-photo">
-                  <img src="img/7/t3.png" alt="">
+                  <!-- <img src="img/7/t3.png" alt=""> -->
+                  <a href="mailto:" class="button">
+                    связаться
+                  </a>
                 </div>
                 <div class="slider-descr">
                   <div class="slider-descr__name">
@@ -807,7 +842,10 @@
 
               <div class="team-slider__item team-slider__item4">
                 <div class="slider-photo">
-                  <img src="img/7/t4.png" alt="">
+                  <!-- <img src="img/7/t4.png" alt=""> -->
+                  <a href="mailto:" class="button">
+                    связаться
+                  </a>
                 </div>
                 <div class="slider-descr">
                   <div class="slider-descr__name">
@@ -823,13 +861,13 @@
               
 
             </div>
-          </div>
-              
 
-              <div class="team-arrows">
-                <div class="slider-arrow__right team-arrows__right slick-arrow"></div>
-                <div class="slider-arrow__left team-arrows__left slick-arrow"></div>
-              </div>
+            <div class="team-arrows">
+              <div class="slider-arrow__right team-arrows__right slick-arrow"></div>
+              <div class="slider-arrow__left team-arrows__left slick-arrow"></div>
+            </div>
+
+          </div>
            
         </div>
       </div>
@@ -906,37 +944,72 @@
         <div class="col-12">
           <div class="row">
             <div class="col-12 col-xl-7">
-              <div class="results-slider">
-                <div class="results-slider__item results-slider__item1">
-                  <div class="slider-photo">
-                    <img src="img/9/r-1.png" alt="">
-                  </div>
-                  <div class="slider-descr">
-                    <div class="slider-quote">
-                      <img src="img/main/results-quote.png" alt="">
+              <div class="results-slider__wrapper">
+                <div class="results-slider">
+                  <div class="results-slider__item results-slider__item1">
+                    <div class="slider-photo">
+                      <!-- <img src="img/9/r-1.png" alt=""> -->
                     </div>
-
                   </div>
+ 
 
-                </div>
-                <div class="results-slider__item results-slider__item2">
-                  <div class="slider-photo">
-                    <img src="img/main/results-slider-2.jpeg" alt="">
-                  </div>
-                  <div class="slider-descr">
-                    <div class="slider-quote">
-                      <img src="img/main/results-quote.png" alt="">
+                  <div class="results-slider__item results-slider__item2">
+                    <div class="slider-photo">
+                      <!-- <img src="img/9/r-2.png" alt=""> -->
                     </div>
-
                   </div>
+
+                  <div class="results-slider__item results-slider__item3">
+                    <div class="slider-photo">
+                      <!-- <img src="img/9/r-3.png" alt=""> -->
+                    </div>
+                  </div>
+
+                  <div class="results-slider__item results-slider__item4">
+                    <div class="slider-photo">
+                      <!-- <img src="img/9/r-4.png" alt=""> -->
+                    </div>
+                  </div>
+
+                  <div class="results-slider__item results-slider__item5">
+                    <div class="slider-photo">
+                      <!-- <img src="img/9/r-5.png" alt=""> -->
+                    </div>
+                  </div>
+
+                  <div class="results-slider__item results-slider__item6">
+                    <div class="slider-photo">
+                      <!-- <img src="img/9/r-6.png" alt=""> -->
+                    </div>
+                  </div>
+
+                  <div class="results-slider__item results-slider__item7">
+                    <div class="slider-photo">
+                      <!-- <img src="img/9/r-7.png" alt=""> -->
+                    </div>
+                  </div>
+
+                  <div class="results-slider__item results-slider__item8">
+                    <div class="slider-photo">
+                      <!-- <img src="img/9/r-8.png" alt=""> -->
+                    </div>
+                  </div>
+
+                  <div class="results-slider__item results-slider__item9">
+                    <div class="slider-photo">
+                      <!-- <img src="img/9/r-9.png" alt=""> -->
+                    </div>
+                  </div>
+                  
+  
                 </div>
-
+  
+                <div class="results-arrows">
+                  <div class="slider-arrow__right results-arrows__right slick-arrow"></div>
+                  <div class="slider-arrow__left results-arrows__left slick-arrow"></div>
+                </div>
               </div>
-
-              <div class="results-arrows">
-                <div class="slider-arrow__right results-arrows__right slick-arrow"></div>
-                <div class="slider-arrow__left results-arrows__left slick-arrow"></div>
-              </div>
+              
             </div>
 
             <div class="col-12 col-xl-5">
@@ -1006,11 +1079,11 @@
 
       <div class="row">
         <div class="col-12">
-          
+            <div class="recommends-slider__wrapper">
               <div class="recommends-slider">
                 <div class="recommends-slider__item recommends-slider__item1">
                   <div class="slider-photo">
-                    <img src="img/10/r-1.png" alt="">
+                    <img src="img/10/r-1.jpg" alt="">
                   </div>
                   <div class="slider-title">
                     ООО А4
@@ -1020,7 +1093,7 @@
 
                 <div class="recommends-slider__item recommends-slider__item2">
                   <div class="slider-photo">
-                    <img src="img/10/r-2.png" alt="">
+                    <img src="img/10/r-2.jpg" alt="">
                   </div>
                   <div class="slider-title">
                     Ип Галицкий
@@ -1030,7 +1103,7 @@
 
                 <div class="recommends-slider__item recommends-slider__item3">
                   <div class="slider-photo">
-                    <img src="img/10/r-3.png" alt="">
+                    <img src="img/10/r-3.jpg" alt="">
                   </div>
                   <div class="slider-title">
                     Ип Галицкий
@@ -1040,7 +1113,7 @@
 
                 <div class="recommends-slider__item recommends-slider__item4">
                   <div class="slider-photo">
-                    <img src="img/10/r-4.png" alt="">
+                    <img src="img/10/r-4.jpg" alt="">
                   </div>
                   <div class="slider-title">
                     Куб
@@ -1048,15 +1121,15 @@
 
                 </div>
 
-                <!-- <div class="recommends-slider__item recommends-slider__item4">
+                <div class="recommends-slider__item recommends-slider__item4">
                   <div class="slider-photo">
-                    <img src="img/10/r-5.png" alt="">
+                    <img src="img/10/r-5.jpg" alt="">
                   </div>
                   <div class="slider-title">
                     МЕГА БИЛД АСТАНА
                   </div>
 
-                </div> -->
+                </div>
                 
 
               </div>
@@ -1065,6 +1138,9 @@
                 <div class="slider-arrow__right recommends-arrows__right slick-arrow"></div>
                 <div class="slider-arrow__left recommends-arrows__left slick-arrow"></div>
               </div>
+            </div>
+          
+              
            
         </div>
       </div>
@@ -1146,9 +1222,9 @@
 
         <div class="col-12">
           <div class="cta-btn__wrapper">
-            <button  class="button button_filled cta-btn">
+            <a  class="button button_filled cta-btn scroll-to-element" href="#calculations">
               РАССЧИТАТЬ СТОИМОСТЬ ПРОЕКТА НА КАЛЬКУЛЯТОРЕ
-            </button>
+          </a>
           </div>
           
         </div>
@@ -1226,14 +1302,14 @@
             ООО СТРОЙТЕХНОЛОГИЯ
           </span>
           <span class="footer-rekv">
-            РЕКВИЗИТЫ ОРГАНИЗАЦИИ
+            <a href="docs/rekvizity.pdf" download="">РЕКВИЗИТЫ ОРГАНИЗАЦИИ</a>
           </span>
         </div>
 
         <div class="col-12 col-md-6 text-center text-md-right">
           
           <div class="footer-policy">
-            ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+            <a href="policy.html" target="_blank">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
           </div>
         </div>
         
@@ -1265,7 +1341,7 @@
 
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 
-  <script src="js/jquery.maskedinput.min.js"></script>
+  <!-- <script src="js/jquery.maskedinput.min.js"></script> -->
 
 
 
@@ -1284,20 +1360,53 @@
 
 
     <script>
-      $('.portfolio-slider').slick({
+      $('.services-slider').slick({
         centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        autoplay: true,
+        //centerPadding: '60px',
+        slidesToShow: 1,
+        // autoplay: true,
         //arrows: false,
-        prevArrow: $('.portfolio-arrows__left'),
-        nextArrow: $('.portfolio-arrows__right'),
+        prevArrow: $('.services-arrows__left'),
+        nextArrow: $('.services-arrows__right'),
+        responsive: [
+
+          {
+              breakpoint: 768,
+              settings: {
+                //arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+  
+        //   {
+        //     breakpoint: 768,
+        //     settings: {
+        //       arrows: false,
+        //       centerMode: true,
+        //       centerPadding: '40px',
+        //       slidesToShow: 1
+        //     }
+        //   }
+         ]
+      });
+
+      $('.results-slider').slick({
+        centerMode: true,
+        //centerPadding: '60px',
+        slidesToShow: 1,
+        // autoplay: true,
+        //arrows: false,
+        prevArrow: $('.results-arrows__right'),
+        nextArrow: $('.results-arrows__left'),
+        
         responsive: [
   
           {
             breakpoint: 768,
             settings: {
-              arrows: false,
+              //arrows: false,
               centerMode: true,
               centerPadding: '40px',
               slidesToShow: 1
@@ -1305,6 +1414,109 @@
           }
         ]
       });
+
+      $('.team-slider').slick({
+        centerMode: true,
+        //centerPadding: '60px',
+        slidesToShow: 4,
+        // autoplay: true,
+        //arrows: false,
+        prevArrow: $('.team-arrows__left'),
+        nextArrow: $('.team-arrows__right'),
+        responsive: [
+  
+          {
+            breakpoint: 1299,
+            settings: {
+              //arrows: false,
+              centerMode: true,
+              //centerPadding: '40px',
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+
+          {
+            breakpoint: 991,
+            settings: {
+              //arrows: false,
+              centerMode: true,
+              //centerPadding: '40px',
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+          ,
+          {
+            breakpoint: 768,
+            settings: {
+              //arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+
+      $('.recommends-slider').slick({
+        centerMode: true,
+        //centerPadding: '60px',
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        // autoplay: true,
+        //arrows: false,
+        prevArrow: $('.recommends-arrows__left'),
+        nextArrow: $('.recommends-arrows__right'),
+        responsive: [
+  
+          {
+            breakpoint: 1299,
+            settings: {
+              //arrows: false,
+              centerMode: true,
+              //centerPadding: '40px',
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          }
+          ,
+          {
+            breakpoint: 991,
+            settings: {
+              //arrows: false,
+              centerMode: true,
+              //centerPadding: '40px',
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+          ,
+          {
+            breakpoint: 768,
+            settings: {
+              //arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+        // responsive: [
+  
+        //   {
+        //     breakpoint: 768,
+        //     settings: {
+        //       arrows: false,
+        //       centerMode: true,
+        //       centerPadding: '40px',
+        //       slidesToShow: 1
+        //     }
+        //   }
+        // ]
+      });
+
+
   
       $('.reviews-slider').slick({
         centerMode: true,
@@ -1327,15 +1539,146 @@
             }
           },
           {
-            breakpoint: 575,
+            breakpoint: 768,
             settings: {
-  
-              centerMode: false
-  
+              //arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
             }
           }
         ]
       });
+
+
+
+
+    $(document).ready(function() {
+        $('input[type="range"]').on("input", function() {
+          console.log('range');
+            var c = $(this)
+              , g = c.attr("min")
+              , i = c.attr("max")
+              , b = c.val()
+              , d = c.data("thumbwidth");
+            var e = i - g;
+            var f = ((b - g) / e) * 100;
+            var h = Math.round(d * f / 100) + 20;
+            var a = $("form output");
+            a.css("left", "calc(" + f + "% - " + h + "px)").text(b)
+        })
+    });
+
+
+
+    var x, i, j, selElmnt, a, b, c;
+
+    x = document.getElementsByClassName("custom-select");
+
+    for (i = 0; i < x.length; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        a = document.createElement("DIV");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 1; j < selElmnt.length; j++) {
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function(m) {
+                var n, f, d, l, g;
+                l = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                g = this.parentNode.previousSibling;
+                for (f = 0; f < l.length; f++) {
+                    if (l.options[f].innerHTML == this.innerHTML) {
+                        l.selectedIndex = f;
+                        g.innerHTML = this.innerHTML;
+                        n = this.parentNode.getElementsByClassName("same-as-selected");
+                        for (d = 0; d < n.length; d++) {
+                            n[d].removeAttribute("class")
+                        }
+                        this.setAttribute("class", "same-as-selected");
+                        break
+                    }
+                }
+                g.click()
+            });
+            b.appendChild(c)
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function(d) {
+            d.stopPropagation();
+            closeAllSelect(this);
+            
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active")
+        })
+    }
+    
+    function closeAllSelect(g) {
+        
+        var d, h, f, e = [];
+        d = document.getElementsByClassName("select-items");
+        h = document.getElementsByClassName("select-selected");
+        for (f = 0; f < h.length; f++) {
+            if (g == h[f]) {
+                e.push(f);
+
+                var hParent = $(h[f]).parent();
+
+                if( hParent.hasClass('custom-select_1') ) {
+                  //console.log( hParent );
+                  $('label.select_1').css('color', '#ffffff');
+                }
+
+                if( hParent.hasClass('custom-select_2') ) {
+                  //console.log( hParent );
+                  $('label.select_2').css('color', '#ffffff');
+                }
+
+                if( hParent.hasClass('custom-select_3') ) {
+                  //console.log( hParent );
+                  $('label.select_3').css('color', '#ffffff');
+                }
+                
+            } else {
+                h[f].classList.remove("select-arrow-active");
+
+                
+                
+                //hParent.css('display', 'none');
+            }
+        }
+        for (f = 0; f < d.length; f++) {
+            if (e.indexOf(f)) {
+                d[f].classList.add("select-hide")
+            }
+        }
+        
+    }
+
+    document.addEventListener("click", closeAllSelect);
+
+
+
+    $(".scroll-to-element").click(function(g) {
+        g.preventDefault();
+        if ($(window).width() > 991) {
+            navbarHeight = 30
+        } else {
+            navbarHeight = 70
+        }
+        var h = $(this.hash).offset().top - (navbarHeight);
+        $("html, body").animate({
+            scrollTop: h
+        }, 600);
+        // if ($(this).hasClass("our-services") || $(this).hasClass("call-to-us")) {
+        //     $(".navbar-collapse").removeClass("show")
+        // }
+    });
+
+
     </script>
 
 

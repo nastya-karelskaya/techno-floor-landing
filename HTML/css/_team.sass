@@ -15,22 +15,91 @@
 
   &-subtitle 
 
-  &-slider 
-    margin-top: 90px
+  &-slider
     position: absolute
-
+    min-width: 1355px
+    width: 100%
+    .slick-list.draggable
+      height: 600px
     &__wrapper 
       position: relative
-      height: 550px
-      
+      height: 600px
+      margin-top: 90px
     &__item
-      display: inline-block 
-      width: 24.6%
+      
+      height: 400px
+      width: 100%
+      max-width: 394px
+      //min-width: 300px
+      margin: 0 20px
+      &.slick 
+        &-active 
+          padding: 20px 0px
+          img 
+            height: auto
+            //height: 430px !important
+          &[data-slick-index="0"]
+            //padding: 0px
+            img 
+              //height: 490px
 
+                  
+
+          &[tabindex="-1"]
+            //width: 370px !important
+            //margin-right: 0
       .slider
-        &-photo 
+        &-photo
+          // border-radius: 5px       
+          height: 100%
+          border-radius: 2px
+          width: 100%
+          position: relative
+          a 
+            font-family: Ubuntu, sans-serif
+            font-size: 11px
+            font-weight: bold
+            text-transform: uppercase
+            color: $white
+            padding-left: 10px
+            padding-right: 10px
+            padding-top: 20px
+            padding-bottom: 20px
+            width: 66%
+            text-align: center
+            position: absolute
+            bottom: 30px
+            left: 17%
+            opacity: 0
+
+
+
+          &:hover 
+            &::after 
+              content: ''
+              width: 100%
+              height: 100%
+              position: absolute
+              top: 0
+              left: 0
+              background-color: $blue
+              opacity: .7
+              transition: all .3s
+              cursor: pointer
+              border-color: $white
+
+            a 
+              z-index: 10
+              opacity: 1
+              transition: opacity .3s
+
+
+
           img 
             width: 100%
+            height: auto
+            
+
         &-descr
           &__name
             margin-top: 38px
@@ -44,7 +113,70 @@
             font-family: Montserrat, sans-serif
             font-size: 14px
             color: $text-black
+     
+      &1
+        padding: 0
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/7/t1.png) center, no-repeat
+          background-size: cover
+          // img 
+            //height: 430px !important
+        
+      &2
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/7/t2.png) center, no-repeat
+          background-size: cover
+      &3
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/7/t3.png) center, no-repeat
+          background-size: cover
+      &4
+        .slider-photo
+          width: 100%
+          height: 100%
+          background: url(../img/7/t4.png) center, no-repeat
+          background-size: cover
+      &5
+        
+        .slider-photo
+          //width: 100%
+          // height: 252px
+          // background: url(../img/service-5.png) center, no-repeat
+          // background-size: cover
 
-    
+
+  &-arrows
+    position: absolute
+    top: 620px
+    left: 450px
+    width: 700px
+    height: 3px
+    background-color: #d5d5d5
+    &__left, &__right 
+      position: absolute
+      width: 200px
+      height: 7px
+      background-size: contain
+      top: -2px
+
+    &__left 
+      left: 0
+      background: url(../img/7/a-left.png) left no-repeat
+      
+      
+
+    &__right 
+      right: 0
+      background: url(../img/7/a-right.png) right no-repeat
+
+
+
+
+
   
-

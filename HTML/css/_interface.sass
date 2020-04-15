@@ -8,7 +8,7 @@ body
   font-family: 'Montserrat-Regular', san-serif
   //
 
-button.button
+button.button, a.button
   color: $btn-o
   font-family: Ubuntu, san-serif
   font-size: 10px
@@ -29,11 +29,11 @@ button.button
   &.button_filled 
     background-color: $blue
     color: $white
+    
 
     
 
-  &:hover 
-    outline: none
+  
 
 input
   outline: none
@@ -181,45 +181,46 @@ input
 
   &-right
 
+
+.slick 
+  &-list.draggable
+    padding: 0 50px 0px 0px !important
+
+  &-slider 
+    
+  &-slide 
+    padding: 20px 0px
+  &-active 
+    padding: 0px 0px
+    max-width: 600px
+    &.slider
+
+
+
+  
+
+
 .slider-arrow__right, .slider-arrow__left
-  height: 6px
-  width: 148px
+  
 
 .slider-arrow__right
-  background: url(../img/main/slider-arrow-right.png) center no-repeat    
+ 
 
 .slider-arrow__left
-  background: url(../img/main/slider-arrow-left.png) center no-repeat
-
+  
 .form
-  //margin-top: 79px
-  border-radius: 5px
-  background-color: $white
-  padding: 76px 49px
+  
   &-fieldset
   &-input
-    padding-left: 20px
-    width: 100%
-    margin-bottom: 20px
+   
   &-label 
-    display: none
-    color: red 
-    transition: color 0.3s ease 0s
-    font-size: 12px
-    font-weight: 300
-    line-height: 16px
-    margin: 0 auto 
-    margin-bottom: 5px
-    text-align: center
-    &.active
-      display: block
     
+    &.active
+     
     
 
   button
-    margin-top: 20px
-    width: 100%
-    
+   
   &-politics
     
 
@@ -235,47 +236,24 @@ input
     
 
 .modal
-  width: 370px
-  margin: 50px auto
-  padding-right: 30px !important
+  
   &-body
-    position: relative 
+    
 
   &-content 
-    position: relative
+    
   &-close 
-    position: absolute
-    right: -30px
-    top: -35px
-    font-size: 30px
-    color: $white
+    
 
   .form 
-    padding: 46px 39px
-
+    
   .window-success 
-    width: 100%
-    height: 100%
-    max-width: 600px
-    max-height: 600px
-    min-width: 300px  
-    min-height: 300px
-    border-radius: 50%
-    border: 2px solid #71706e
+    
 
   .fail 
-    position: absolute
-    display: none
-    text-align: center
-    font-weight: bold
-    margin: 0 auto
-    width: 90%
-    top: 40%
+    
 
     &.active 
-      //position: relative
-      transition: all .3s
-      display: block
-
+      
 
     

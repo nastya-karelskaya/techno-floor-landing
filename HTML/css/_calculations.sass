@@ -32,9 +32,13 @@
         &__select 
             margin-right: 20px
             width: 100%
+            position: relative
 
             label 
                 width: 100%
+                color: $text-black
+                font-family: Montserrat, san-serif
+                font-size: 14px
             &-wrapper 
     
 
@@ -87,16 +91,18 @@
                     background: $blue
 
                 &::-webkit-slider-thumb
-                    border-radius: 50%
-                    background-color: $blue
+                    // border-radius: 50%
+                    // background-color: $blue
                     -webkit-box-shadow: 0 5px 29px 0 $gray-bg
                     box-shadow: 0 5px 29px 0 $gray-bg
-                    height: 17px
-                    width: 17px
-                    border-radius: 50%
+                    height: 67px
+                    width: 67px
+                    // border-radius: 50%
                     cursor: pointer
                     -webkit-appearance: none
-                    margin-top: -8px
+                    margin-top: -30px
+                    background: url(../img/cl.png) center no-repeat
+                    background-size: contain
                     &::before 
                         height: 21px
                         width: 21px
@@ -237,18 +243,23 @@
                 margin-top: 60px
 
     .custom-select 
-        position: relative
+        position: absolute
         border: 0
         background-color: transparent
-        width: 210px
+        width: 100%
         padding-left: 0
-        display: none
+        top: 20px
+        left: 0px
+        background: none
+        //display: none
         select 
             display: none
+            -webkit-appearance: none
 
     .select
         background-color: $white
         padding: 27px 123px 27px 39px
+        
         label 
             color: $text-black
             font-family: Montserrat, san-serif
@@ -256,48 +267,61 @@
        
         &-selected 
             background-color: transparent
-            display: none
+            padding-left: 39px
+            color: $text-black
+            font-family: Montserrat, san-serif
+            font-size: 14px
+            //display: none
             &:after 
                 position: absolute
                 content: ""
                 top: 3px
-                right: 10px
+                right: 50px
                 width: 30px
                 height: 30px
-                border-color: #fff transparent transparent transparent
-                background: #f5f5f5 url(../images/form/arrow.png) no-repeat center
+                
+                background: #ffffff url(../img/arrow-bottom.png) no-repeat center
    
         &.select-arrow-active
             &:after 
 
         &-items 
             position: absolute
-            background-color: DodgerBlue
-            top: 105%
-            left: 83px
-            right: 0
+            background-color: $white
+            top: 40px
+            left: 0
+            
             z-index: 99
             width: 100%
-            border-radius: 10px
+            
             margin-top: 7px
             div
+                padding-left: 39px
+                padding-top: 20px
+                padding-bottom: 20px
+                padding-right: 10px
+                color: $text-black
+                font-family: Montserrat, san-serif
+                font-size: 14px
                 &:hover
+                    background-color: $blue
+                    color: $white
     
             &::before 
-                position: absolute
-                content: ''
-                top: -15px
-                left: 0
-                width: 100%
-                height: 100%
-                background-color: DodgerBlue
-                border-radius: 50%
-                z-index: -1
-                -webkit-clip-path: polygon(0 0,100% 0,100% 92%,56% 92%,51% 100%,46% 92%,0 92%)
-                clip-path: polygon(0 0,100% 0,100% 92%,56% 92%,51% 100%,46% 92%,0 92%)
-                -webkit-transform: rotate(180deg)
-                -ms-transform: rotate(180deg)
-                transform: rotate(180deg)
+                // position: absolute
+                // content: ''
+                // top: -15px
+                // left: 0
+                // width: 100%
+                // height: 100%
+                // background-color: DodgerBlue
+                // border-radius: 50%
+                // z-index: -1
+                // -webkit-clip-path: polygon(0 0,100% 0,100% 92%,56% 92%,51% 100%,46% 92%,0 92%)
+                // clip-path: polygon(0 0,100% 0,100% 92%,56% 92%,51% 100%,46% 92%,0 92%)
+                // -webkit-transform: rotate(180deg)
+                // -ms-transform: rotate(180deg)
+                // transform: rotate(180deg)
     
             &:first-child
                 height: 102%
