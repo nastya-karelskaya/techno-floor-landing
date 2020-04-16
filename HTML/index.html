@@ -24,6 +24,8 @@
   <title>Полимерные полы с пожизненной
     гарантией от 1390 рублей
     за 1 квадратнный метр под ключ</title>
+  
+
 </head>
 
 <body>
@@ -783,7 +785,7 @@
           <div class="team-slider__wrapper">
 
             <div class="team-slider">
-              <div class="team-slider__item team-slider__item1">
+              <div class="team-slider__item team-slider__item1 ">
                 <div class="slider-photo">
                   <!-- <img src="img/7/t1.png" alt=""> -->
                   <a href="mailto:" class="button">
@@ -857,8 +859,7 @@
 
                 </div>
 
-              </div>
-              
+              </div>  
 
             </div>
 
@@ -866,6 +867,8 @@
               <div class="slider-arrow__right team-arrows__right slick-arrow"></div>
               <div class="slider-arrow__left team-arrows__left slick-arrow"></div>
             </div>
+
+           
 
           </div>
            
@@ -1079,10 +1082,10 @@
 
       <div class="row">
         <div class="col-12">
-            <div class="recommends-slider__wrapper">
+            <div class="recommends-slider__wrapper custom-lightbox">
               <div class="recommends-slider">
-                <div class="recommends-slider__item recommends-slider__item1">
-                  <div class="slider-photo">
+                <div class="recommends-slider__item recommends-slider__item1 custom-lightbox-column">
+                  <div class="slider-photo custom-lightbox-cursor" onclick="openModal('caseModal1');currentSlide(1, 'caseModal1', 'captionCase1')">
                     <img src="img/10/r-1.jpg" alt="">
                   </div>
                   <div class="slider-title">
@@ -1091,8 +1094,8 @@
 
                 </div>
 
-                <div class="recommends-slider__item recommends-slider__item2">
-                  <div class="slider-photo">
+                <div class="recommends-slider__item recommends-slider__item2 custom-lightbox-column">
+                  <div class="slider-photo custom-lightbox-cursor" onclick="openModal('caseModal1');currentSlide(2, 'caseModal1', 'captionCase1')">
                     <img src="img/10/r-2.jpg" alt="">
                   </div>
                   <div class="slider-title">
@@ -1101,8 +1104,8 @@
 
                 </div>
 
-                <div class="recommends-slider__item recommends-slider__item3">
-                  <div class="slider-photo">
+                <div class="recommends-slider__item recommends-slider__item3 custom-lightbox-column">
+                  <div class="slider-photo custom-lightbox-cursor" onclick="openModal('caseModal1');currentSlide(3, 'caseModal1', 'captionCase1')">
                     <img src="img/10/r-3.jpg" alt="">
                   </div>
                   <div class="slider-title">
@@ -1111,8 +1114,8 @@
 
                 </div>
 
-                <div class="recommends-slider__item recommends-slider__item4">
-                  <div class="slider-photo">
+                <div class="recommends-slider__item recommends-slider__item4 custom-lightbox-column">
+                  <div class="slider-photo custom-lightbox-cursor" onclick="openModal('caseModal1');currentSlide(4, 'caseModal1', 'captionCase1')">
                     <img src="img/10/r-4.jpg" alt="">
                   </div>
                   <div class="slider-title">
@@ -1121,8 +1124,8 @@
 
                 </div>
 
-                <div class="recommends-slider__item recommends-slider__item4">
-                  <div class="slider-photo">
+                <div class="recommends-slider__item recommends-slider__item5 custom-lightbox-column">
+                  <div class="slider-photo custom-lightbox-cursor" onclick="openModal('caseModal1');currentSlide(5, 'caseModal1', 'captionCase1')">
                     <img src="img/10/r-5.jpg" alt="">
                   </div>
                   <div class="slider-title">
@@ -1138,6 +1141,54 @@
                 <div class="slider-arrow__right recommends-arrows__right slick-arrow"></div>
                 <div class="slider-arrow__left recommends-arrows__left slick-arrow"></div>
               </div>
+
+              <div id="caseModal1" class="custom-lightbox-modal" style="display: none;">
+  
+                <span class="custom-lightbox-close custom-lightbox-cursor" onclick="closeModal('caseModal1')">×</span>
+            
+                <div class="custom-lightbox-modal-content">
+            
+                  <div class="custom-lightbox-mySlides" style="display: none;">
+                    <div class="custom-lightbox-numbertext">1 / 5</div>
+                    <img src="img/10/r-1.jpg" alt="">
+                  </div>
+            
+                  <div class="custom-lightbox-mySlides" style="display: block;">
+                    <div class="custom-lightbox-numbertext">2 / 5</div>
+                    <img src="img/10/r-2.jpg" alt="">
+                  </div>
+            
+                  <div class="custom-lightbox-mySlides" style="display: none;">
+                    <div class="custom-lightbox-numbertext">3 / 5</div>
+                    <img src="img/10/r-3.jpg" alt="">
+                  </div>
+
+                  <div class="custom-lightbox-mySlides" style="display: none;">
+                    <div class="custom-lightbox-numbertext">4 / 5</div>
+                    <img src="img/10/r-4.jpg" alt="">
+                  </div>
+
+                  <div class="custom-lightbox-mySlides" style="display: none;">
+                    <div class="custom-lightbox-numbertext">5 / 5</div>
+                    <img src="img/10/r-5.jpg" alt="">
+                  </div>
+            
+            
+                  
+            
+                  <a class="custom-lightbox-prev" onclick="plusSlides(-1, 'caseModal1', 'captionCase1')">❮</a>
+                  <a class="custom-lightbox-next" onclick="plusSlides(1, 'caseModal1', 'captionCase1')">❯</a>
+            
+      
+            
+                  
+                </div>
+              
+              </div>
+
+
+
+
             </div>
           
               
@@ -1680,6 +1731,134 @@
 
 
     </script>
+
+
+<script>
+  
+  function openModal(a) {
+    document.getElementById(a).style.display = "block"
+    
+}
+
+function closeModal(a) {
+    document.getElementById(a).style.display = "none"
+}
+
+var slideIndex = 1;
+showSlides(slideIndex, "caseModal1", "captionCase1");
+//showSlides(slideIndex, "caseModal2", "captionCase2");
+//showSlides(slideIndex, "caseModal3", "captionCase3");
+//showSlides(slideIndex, "caseModal4", "captionCase4");
+
+function plusSlides(c, b, a) {
+    showSlides(slideIndex += c, b, a)
+}
+
+function currentSlide(c, b, a) {
+    showSlides(slideIndex = c, b, a)
+}
+
+function showSlides(h, e, c) {
+    var b;
+    var a = document.getElementById(e);
+    var d = a.getElementsByClassName("custom-lightbox-mySlides");
+    //var g = a.getElementsByClassName("custom-lightbox-demo");
+    var f = document.getElementById(c);
+    if (h > d.length) {
+        slideIndex = 1
+    }
+    if (h < 1) {
+        slideIndex = d.length
+    }
+    for (b = 0; b < d.length; b++) {
+        d[b].style.display = "none"
+    }
+    //for (b = 0; b < g.length; b++) {
+        //g[b].className = g[b].className.replace(" custom-lightbox-active", "")
+    //}
+    d[slideIndex - 1].style.display = "block";
+    //g[slideIndex - 1].className += " custom-lightbox-active";
+    //f.innerHTML = g[slideIndex - 1].alt
+}
+
+
+
+
+var mainMenu = document.getElementById("primary-menu");
+var mainMenuItems = mainMenu.getElementsByClassName("menu-item");
+
+for (var i = 0; i < mainMenuItems.length; i++) {
+    mainMenuItems[i].addEventListener("click", getTheId)
+}
+
+function getTheId(b) {
+    theHref = this.getElementsByTagName("a")[0].href;
+    var a = theHref.split("#")[1];
+    smoothScroll(a);
+    return false
+}
+
+function currentYPosition() {
+    if (self.pageYOffset) {
+        return self.pageYOffset
+    }
+    if (document.documentElement && document.documentElement.scrollTop) {
+        return document.documentElement.scrollTop
+    }
+    if (document.body.scrollTop) {
+        return document.body.scrollTop
+    }
+    return 0
+}
+
+function elmYPosition(a) {
+    var d = document.getElementById(a);
+    var c = d.offsetTop;
+    var b = d;
+    while (b.offsetParent && b.offsetParent != document.body) {
+        b = b.offsetParent;
+        c += b.offsetTop
+    }
+    return c
+}
+
+function smoothScroll(j) {
+    var g = currentYPosition();
+    var a = elmYPosition(j);
+    var b = a > g ? a - g : g - a;
+    if (b < 100) {
+        scrollTo(0, a);
+        return
+    }
+    var e = Math.round(b / 100);
+    if (e >= 20) {
+        e = 50
+    }
+    var d = Math.round(b / 25);
+    var h = a > g ? g + d : g - d;
+    var c = 0;
+    if (a > g) {
+        for (var f = g; f < a; f += d) {
+            setTimeout("window.scrollTo(0, " + h + ")", c * e);
+            h += d;
+            if (h > a) {
+                h = a
+            }
+            c++
+        }
+        return
+    }
+    for (var f = g; f > a; f -= d) {
+        setTimeout("window.scrollTo(0, " + h + ")", c * e);
+        h -= d;
+        if (h < a) {
+            h = a
+        }
+        c++
+    }
+};
+
+</script>
 
 
 
