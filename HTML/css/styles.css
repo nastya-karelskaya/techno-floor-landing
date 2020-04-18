@@ -1838,6 +1838,479 @@ img.custom-lightbox-hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
+.modal-dialog {
+  border-radius: none;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-max-width .modal-dialog {
+  max-width: 1170px;
+  width: 100%;
+}
+
+.modal-small-width .modal-dialog {
+  max-width: 670px;
+  width: 100%;
+}
+
+.modal-small-width .modal-dialog button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-part__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px;
+}
+
+.modal-part__title-icon {
+  margin-right: 27px;
+}
+
+.modal-part__title-text {
+  color: #1C161C;
+  font-family: Ubuntu, san-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: left;
+}
+
+.modal-part__left, .modal-part__right, .modal-part__center {
+  height: 100%;
+  width: 100%;
+  padding: 80px 40px;
+}
+
+.modal-part__left .input-wrapper, .modal-part__right .input-wrapper, .modal-part__center .input-wrapper {
+  position: relative;
+}
+
+.modal-part__left .input-wrapper label, .modal-part__right .input-wrapper label, .modal-part__center .input-wrapper label {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  background: url(../img/forms/paperclick.png) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 52px;
+  top: 31px;
+  width: 22px;
+  height: 23px;
+  display: block;
+}
+
+.modal-part__left .input-wrapper .caption, .modal-part__right .input-wrapper .caption, .modal-part__center .input-wrapper .caption {
+  position: absolute;
+  left: 105px;
+  top: 31px;
+  color: #818181;
+  font-family: Montserrat, san-serif;
+  font-size: 12px;
+}
+
+.modal-part__left input, .modal-part__right input, .modal-part__center input {
+  width: 100%;
+  height: 85px;
+  padding: 38px 20px 38px 105px;
+  margin-bottom: 30px;
+  color: #818181;
+  font-family: Montserrat, san-serif;
+  font-size: 12px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal-part__left input[type="file"], .modal-part__right input[type="file"], .modal-part__center input[type="file"] {
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-part__left input[type="file"]::before, .modal-part__right input[type="file"]::before, .modal-part__center input[type="file"]::before {
+  position: absolute;
+  content: '';
+  width: 70%;
+  height: 100%;
+  background-color: #ffffff;
+  left: 0;
+  top: 0;
+}
+
+.modal-part__left button, .modal-part__right button, .modal-part__center button {
+  width: 100%;
+  height: 85px;
+}
+
+.modal-part__left button span, .modal-part__right button span, .modal-part__center button span {
+  color: #ffffff;
+}
+
+.modal-part__left button .icon, .modal-part__right button .icon, .modal-part__center button .icon {
+  width: 23px;
+  height: 23px;
+  background: url(../img/forms/email.png) center no-repeat;
+  background-size: contain;
+  margin-right: 18px;
+}
+
+.modal-part__button .caption {
+  margin-top: 19px;
+  color: #BBBBBB;
+  font-family: Montserrat, san-serif;
+  font-size: 10px;
+  text-align: center;
+}
+
+.modal-part__right {
+  background-color: #F8F8F8;
+}
+
+.modal-part__descr {
+  color: #514B51;
+  font-family: Montserrat, san-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.modal-part__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.modal-part__info-icon__wrapper {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.modal-part__info-icon_phone, .modal-part__info-icon_mail {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.modal-part__info-icon_phone {
+  width: 18px;
+  height: 18px;
+  background: url(../img/forms/phone.png) center no-repeat;
+  background-size: contain;
+}
+
+.modal-part__info-icon_mail {
+  width: 20px;
+  height: 20px;
+  background: url(../img/forms/email-b.png) center no-repeat;
+  background-size: contain;
+}
+
+.modal-part__info-icon_mail-b {
+  background: url(../img/forms/email.png) center no-repeat;
+  background-size: contain;
+}
+
+.modal-part__info-icon_compass {
+  width: 20px;
+  height: 20px;
+  background: url(../img/forms/compass.png) center no-repeat;
+  background-size: contain;
+}
+
+.modal-part__info hr {
+  margin-top: 100px;
+  background-color: #E4E4E4;
+  margin-bottom: 42px;
+}
+
+.modal-part__info-link {
+  color: #565DA4;
+  font-family: Ubuntu, san-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-part__info-text {
+  color: #1C161C;
+  font-family: Ubuntu, san-serif;
+  font-size: 18px;
+}
+
+#freeSampleModal .modal-part__title-icon_left {
+  background: url(../img/forms/blocks.png) center no-repeat;
+  background-size: contain;
+  width: 48px;
+  height: 34px;
+}
+
+#freeSampleModal .modal-part__title-icon_right {
+  background: url(../img/forms/google.png) center no-repeat;
+  background-size: contain;
+  width: 46px;
+  height: 46px;
+}
+
+#freeSampleModal .modal-part__right .modal-part__title {
+  margin-top: 200px;
+}
+
+#consultationModal .modal-part__title-icon_left {
+  background: url(../img/forms/work.png) center no-repeat;
+  background-size: contain;
+  width: 42px;
+  height: 42px;
+}
+
+#consultationModal .modal-part__title-icon_right {
+  background: url(../img/forms/mobile.png) center no-repeat;
+  background-size: contain;
+  width: 28px;
+  height: 46px;
+}
+
+#consultationModal .modal-part__form .input-wrapper {
+  position: relative;
+}
+
+#consultationModal .modal-part__form .input-wrapper .wa-checker__wrapper, #consultationModal .modal-part__form .input-wrapper .vb-checker__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 81px;
+  height: 86px;
+}
+
+#consultationModal .modal-part__form .input-wrapper .wa-checker__wrapper.active, #consultationModal .modal-part__form .input-wrapper .vb-checker__wrapper.active {
+  background-color: #e4e4e4;
+}
+
+#consultationModal .modal-part__form .input-wrapper .wa-checker {
+  right: 28px;
+  top: 28px;
+  background: url(../img/forms/wa.png) center no-repeat;
+  background-size: contain;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+}
+
+#consultationModal .modal-part__form .input-wrapper .wa-checker__wrapper {
+  right: 0px;
+}
+
+#consultationModal .modal-part__form .input-wrapper .vb-checker {
+  right: 28px;
+  top: 28px;
+  position: absolute;
+  background: url(../img/forms/vb.png) center no-repeat;
+  background-size: contain;
+  width: 26px;
+  height: 26px;
+}
+
+#consultationModal .modal-part__form .input-wrapper .vb-checker__wrapper {
+  right: 81px;
+}
+
+#docsModal .modal-part__title-icon_left {
+  background: url(../img/forms/tasks.png) center no-repeat;
+  background-size: contain;
+  width: 41px;
+  height: 46px;
+}
+
+#docsModal .modal-part__title-icon_right {
+  background: url(../img/forms/car.png) center no-repeat;
+  background-size: contain;
+  width: 46px;
+  height: 28px;
+}
+
+#docsModal .modal-part__form .input-wrapper {
+  position: relative;
+}
+
+#docsModal .modal-part__form .input-wrapper .wa-checker__wrapper, #docsModal .modal-part__form .input-wrapper .vb-checker__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 81px;
+  height: 86px;
+}
+
+#docsModal .modal-part__form .input-wrapper .wa-checker__wrapper.active, #docsModal .modal-part__form .input-wrapper .vb-checker__wrapper.active {
+  background-color: #e4e4e4;
+}
+
+#docsModal .modal-part__form .input-wrapper .wa-checker {
+  right: 28px;
+  top: 28px;
+  background: url(../img/forms/wa.png) center no-repeat;
+  background-size: contain;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+}
+
+#docsModal .modal-part__form .input-wrapper .wa-checker__wrapper {
+  right: 0px;
+}
+
+#docsModal .modal-part__form .input-wrapper .vb-checker {
+  right: 28px;
+  top: 28px;
+  position: absolute;
+  background: url(../img/forms/vb.png) center no-repeat;
+  background-size: contain;
+  width: 26px;
+  height: 26px;
+}
+
+#docsModal .modal-part__form .input-wrapper .vb-checker__wrapper {
+  right: 81px;
+}
+
+#basePriceModal .modal-part__title-icon_left {
+  background: url(../img/forms/calc-2.png) center no-repeat;
+  background-size: contain;
+  width: 46px;
+  height: 46px;
+}
+
+#basePriceModal .modal-part__title-icon_right {
+  background: url(../img/forms/calc-1.png) center no-repeat;
+  background-size: contain;
+  width: 46px;
+  height: 46px;
+}
+
+#hasProjectModal .modal-part__title-icon_center {
+  background: url(../img/forms/ruler.png) center no-repeat;
+  background-size: contain;
+  width: 46px;
+  height: 46px;
+}
+
+#consultationOtherModal .modal-part__title-icon_left {
+  background: url(../img/forms/speech.png) center no-repeat;
+  background-size: contain;
+  width: 46px;
+  height: 37px;
+}
+
+#consultationOtherModal .modal-part__title-icon_right {
+  background: url(../img/forms/mobile.png) center no-repeat;
+  background-size: contain;
+  width: 28px;
+  height: 46px;
+}
+
+#consultationOtherModal .modal-part__form .input-wrapper {
+  position: relative;
+}
+
+#consultationOtherModal .modal-part__form .input-wrapper .wa-checker__wrapper, #consultationOtherModal .modal-part__form .input-wrapper .vb-checker__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 81px;
+  height: 86px;
+}
+
+#consultationOtherModal .modal-part__form .input-wrapper .wa-checker__wrapper.active, #consultationOtherModal .modal-part__form .input-wrapper .vb-checker__wrapper.active {
+  background-color: #e4e4e4;
+}
+
+#consultationOtherModal .modal-part__form .input-wrapper .wa-checker {
+  right: 28px;
+  top: 28px;
+  background: url(../img/forms/wa.png) center no-repeat;
+  background-size: contain;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+}
+
+#consultationOtherModal .modal-part__form .input-wrapper .wa-checker__wrapper {
+  right: 0px;
+}
+
+#consultationOtherModal .modal-part__form .input-wrapper .vb-checker {
+  right: 28px;
+  top: 28px;
+  position: absolute;
+  background: url(../img/forms/vb.png) center no-repeat;
+  background-size: contain;
+  width: 26px;
+  height: 26px;
+}
+
+#consultationOtherModal .modal-part__form .input-wrapper .vb-checker__wrapper {
+  right: 81px;
+}
+
+#fondModal .modal-part__title-icon_center {
+  background: url(../img/forms/baby.png) center no-repeat;
+  background-size: contain;
+  width: 46px;
+  height: 42px;
+}
+
+@media (max-width: 1099px) {
+  .modal-part__left input, .modal-part__right input, .modal-part__center input {
+    padding: 38px 20px 38px 35px;
+  }
+  .modal-part__left .input-wrapper .caption, .modal-part__right .input-wrapper .caption, .modal-part__center .input-wrapper .caption {
+    left: 35px;
+  }
+  .modal-part__left .input-wrapper label, .modal-part__right .input-wrapper label, .modal-part__center .input-wrapper label {
+    right: 35px;
+  }
+}
+
 @media (min-width: 768px) {
   button.button:hover, a.button:hover {
     outline: none;

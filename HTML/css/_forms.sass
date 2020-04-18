@@ -1,0 +1,525 @@
+.modal 
+  
+  &-dialog
+    border-radius: none
+    
+
+
+  &-content 
+    border-radius: 0
+
+
+
+
+  &-max
+    &-width
+      .modal
+        &-dialog 
+          max-width: 1170px
+          width: 100%
+
+  &-small 
+    &-width 
+      .modal
+        &-dialog 
+          max-width: 670px
+          width: 100%
+          button 
+            display: flex
+            flex-direction: row 
+            align-items: center 
+            justify-content: center 
+
+
+  &-part
+    &__title 
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      align-items: center
+      margin-bottom: 45px 
+
+
+      &-icon 
+        margin-right: 27px
+
+      &-text 
+        color: $new-black
+        font-family: Ubuntu, san-serif
+        font-size: 22px
+        font-weight: bold
+        line-height: 26px
+        text-align: left
+        
+
+
+    &__left, &__right, &__center
+      height: 100%
+      width: 100%
+      padding: 80px 40px
+      .input-wrapper 
+        position: relative
+
+        label 
+          font-size: 12px
+          font-weight: 700
+          color: white
+          background-color: transparent
+          background: url(../img/forms/paperclick.png) center no-repeat 
+         
+          background-size: contain
+          position: absolute
+          right: 52px
+          top: 31px
+          width: 22px
+          height: 23px
+          display: block
+
+        .caption
+          position: absolute
+          left: 105px
+          top: 31px 
+          color: #818181
+          font-family: Montserrat, san-serif
+          font-size: 12px
+
+          
+        // .icon 
+        //   position: absolute
+        //   right: 52px
+        //   top: 31px
+        //   width: 22px
+        //   height: 23px
+        //   background: url(../img/forms/paperclick.png) center no-repeat 
+        //   background-size: contain
+      input 
+        width: 100%
+        height: 85px
+        padding: 38px 20px 38px 105px
+        margin-bottom: 30px
+        color: #818181
+        font-family: Montserrat, san-serif
+        font-size: 12px
+        background: transparent
+        border: 1px solid rgba(0,0,0,.2)
+        
+
+        &[type="file"]
+          border: 1px dashed rgba(0,0,0,.2)
+          position: relative
+          &::before 
+            position: absolute
+            content: ''
+            width: 70%
+            height: 100%
+            background-color: #ffffff
+            left: 0
+            top: 0
+
+      
+
+
+      button
+        width: 100% 
+        height: 85px
+        span 
+          color: $white 
+        .icon 
+          width: 23px
+          height: 23px
+          background: url(../img/forms/email.png) center no-repeat 
+          background-size: contain
+          margin-right: 18px
+
+
+    &__button 
+      .caption 
+        margin-top: 19px
+        color: #BBBBBB
+        font-family: Montserrat, san-serif
+        font-size: 10px
+        text-align: center
+
+
+
+
+    
+    &__left 
+      
+      
+
+    &__right 
+      background-color: #F8F8F8
+      
+
+    &__center
+
+    &__descr 
+      color: #514B51
+      font-family: Montserrat, san-serif
+      font-size: 14px
+      line-height: 24px
+      margin-bottom: 50px
+
+    &__info 
+      &-item 
+        display: flex
+        flex-direction: row 
+        justify-content: center 
+        align-items: center 
+        margin-bottom: 30px
+
+      &-icon 
+        &__wrapper 
+          width: 40px
+          height: 40px
+          position: relative
+          background-color: #f8f8f8
+          border-radius: 50%
+          margin-right: 20px
+
+        &_phone, &_mail 
+          position: absolute
+          top: 10px
+          left: 10px
+          width: 20px
+          height: 20px
+          
+
+
+
+        &_phone 
+          width: 18px
+          height: 18px
+          background: url(../img/forms/phone.png) center no-repeat 
+          background-size: contain
+
+        &_mail 
+          width: 20px
+          height: 20px
+          background: url(../img/forms/email-b.png) center no-repeat 
+          background-size: contain
+
+        
+          
+          &-b
+            background: url(../img/forms/email.png) center no-repeat 
+            background-size: contain
+             
+
+        &_compass 
+          width: 20px
+          height: 20px
+          background: url(../img/forms/compass.png) center no-repeat 
+          background-size: contain
+
+
+      hr 
+        margin-top: 100px
+        background-color:#E4E4E4
+        margin-bottom: 42px
+
+      &-link 
+        color: $blue
+        font-family: Ubuntu, san-serif
+        font-size: 20px
+        font-weight: bold
+
+
+      &-text 
+        color: $new-black
+        font-family: Ubuntu, san-serif
+        font-size: 18px
+
+
+ 
+
+  
+#freeSampleModal 
+  .modal-part
+    &__title
+      
+      &-icon 
+        &_left 
+          background: url(../img/forms/blocks.png) center no-repeat 
+          background-size: contain
+          width: 48px
+          height: 34px
+
+        &_right 
+          background: url(../img/forms/google.png) center no-repeat 
+          background-size: contain
+          width: 46px
+          height: 46px
+      &-text 
+      
+    &__left
+      
+
+    &__right
+      .modal-part__title 
+        margin-top: 200px 
+
+
+
+
+#consultationModal 
+  .modal-part
+    &__title 
+      &-icon 
+        &_left 
+          background: url(../img/forms/work.png) center no-repeat 
+          background-size: contain
+          width: 42px
+          height: 42px
+
+        &_right 
+          background: url(../img/forms/mobile.png) center no-repeat 
+          background-size: contain
+          width: 28px
+          height: 46px
+      &-text 
+      
+    &__left
+      
+
+    &__right 
+
+    &__form 
+
+      .input-wrapper 
+        position: relative
+        .caption 
+          
+
+        .wa-checker, .vb-checker
+          &__wrapper
+            position: absolute
+            top: 0
+            right: 0
+            width: 81px
+            height: 86px
+            &.active 
+              background-color: #e4e4e4
+
+        .wa-checker
+          
+          right: 28px
+          top: 28px
+          background: url(../img/forms/wa.png) center no-repeat 
+          background-size: contain
+          width: 26px
+          height: 26px 
+          position: absolute
+          &__wrapper
+            right: 0px
+          
+        .vb-checker
+          right: 28px
+          top: 28px
+          position: absolute
+          background: url(../img/forms/vb.png) center no-repeat 
+          background-size: contain
+          width: 26px
+          height: 26px
+          &__wrapper
+            right: 81px
+
+
+
+#docsModal 
+  .modal-part
+    &__title 
+      &-icon 
+        &_left 
+          background: url(../img/forms/tasks.png) center no-repeat 
+          background-size: contain
+          width: 41px
+          height: 46px
+
+        &_right 
+          background: url(../img/forms/car.png) center no-repeat 
+          background-size: contain
+          width: 46px
+          height: 28px
+      &-text 
+      
+    &__left
+      
+
+    &__right 
+
+    &__form 
+
+      .input-wrapper 
+        position: relative
+
+        .wa-checker, .vb-checker
+          &__wrapper
+            position: absolute
+            top: 0
+            right: 0
+            width: 81px
+            height: 86px
+            &.active 
+              background-color: #e4e4e4
+
+        .wa-checker
+          
+          right: 28px
+          top: 28px
+          background: url(../img/forms/wa.png) center no-repeat 
+          background-size: contain
+          width: 26px
+          height: 26px 
+          position: absolute
+          &__wrapper
+            right: 0px
+          
+        .vb-checker
+          right: 28px
+          top: 28px
+          position: absolute
+          background: url(../img/forms/vb.png) center no-repeat 
+          background-size: contain
+          width: 26px
+          height: 26px
+          &__wrapper
+            right: 81px
+
+#basePriceModal 
+  .modal-part
+    &__title 
+      &-icon
+        &_left 
+          background: url(../img/forms/calc-2.png) center no-repeat 
+          background-size: contain
+          width: 46px
+          height: 46px
+
+        &_right 
+          background: url(../img/forms/calc-1.png) center no-repeat 
+          background-size: contain
+          width: 46px
+          height: 46px 
+      &-text 
+      
+    &__left
+      
+
+    &__right 
+
+
+#hasProjectModal 
+  .modal-part
+    &__title 
+      &-icon 
+        &_center 
+          background: url(../img/forms/ruler.png) center no-repeat 
+          background-size: contain
+          width: 46px
+          height: 46px
+
+        
+      &-text 
+      
+    &__left
+      
+
+    &__right 
+
+
+
+#consultationOtherModal 
+  .modal-part
+    &__title 
+      &-icon 
+        &_left 
+          background: url(../img/forms/speech.png) center no-repeat 
+          background-size: contain
+          width: 46px
+          height: 37px
+
+        &_right 
+          background: url(../img/forms/mobile.png) center no-repeat 
+          background-size: contain
+          width: 28px
+          height: 46px
+      &-text 
+      
+    &__left
+      
+
+    &__right
+
+    &__form 
+
+      .input-wrapper 
+        position: relative
+
+        .wa-checker, .vb-checker
+          &__wrapper
+            position: absolute
+            top: 0
+            right: 0
+            width: 81px
+            height: 86px
+            &.active 
+              background-color: #e4e4e4
+
+        .wa-checker
+          
+          right: 28px
+          top: 28px
+          background: url(../img/forms/wa.png) center no-repeat 
+          background-size: contain
+          width: 26px
+          height: 26px 
+          position: absolute
+          &__wrapper
+            right: 0px
+          
+        .vb-checker
+          right: 28px
+          top: 28px
+          position: absolute
+          background: url(../img/forms/vb.png) center no-repeat 
+          background-size: contain
+          width: 26px
+          height: 26px
+          &__wrapper
+            right: 81px 
+
+
+
+
+#fondModal 
+  .modal-part
+    &__title 
+      &-icon 
+        &_center 
+          background: url(../img/forms/baby.png) center no-repeat 
+          background-size: contain
+          width: 46px
+          height: 42px
+
+       
+      &-text 
+      
+    &__left
+      
+
+    &__right 
+
+    
+@media(max-width: 1099px)
+  .modal-part__left input, .modal-part__right input, .modal-part__center input 
+    padding: 38px 20px 38px 35px
+
+
+  .modal-part__left .input-wrapper .caption, .modal-part__right .input-wrapper .caption, .modal-part__center .input-wrapper .caption 
+    left: 35px
+
+
+  .modal-part__left .input-wrapper label, .modal-part__right .input-wrapper label, .modal-part__center .input-wrapper label 
+    right: 35px
