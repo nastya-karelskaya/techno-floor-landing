@@ -230,19 +230,6 @@ input {
   font-size: 12px;
 }
 
-.slick-list.draggable {
-  padding: 0 50px 0px 0px !important;
-}
-
-.slick-slide {
-  padding: 20px 0px;
-}
-
-.slick-active {
-  padding: 0px 0px;
-  max-width: 600px;
-}
-
 .policy {
   padding: 100px 0px;
   background-color: #dcdcdc;

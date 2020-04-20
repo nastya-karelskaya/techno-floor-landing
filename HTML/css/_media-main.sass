@@ -6,17 +6,25 @@
     margin: 0 10px
 
   .team-slider
-    min-width: 123%
+    //min-width: 123%
+
+    //max-width: 1300px
+    min-width: 1300px
+
+  .team-slider__item 
+
+    margin: 0 15px
 
   .results-slider 
-    width: 133%
-    left: -33%
+    // width: 133%
+    // left: -33%
 
   .results-slider__info-extras 
-    margin-top: 120px
+    //margin-top: 120px
 
-  .recommends-slider 
-    min-width: 120%
+  .recommends-slider
+    min-width: 1300px 
+    //min-width: 120%
 
 @media(max-width: 1499px)
   .services-slider 
@@ -26,12 +34,17 @@
     min-width: 115%
 
   .results-slider 
-    width: 133%
-    left: -33%
+    width: 1200px
+    //width: 133%
+    //left: -33%
+    &__item 
+      margin: 0 57px 0px 0px
+
 
 
   .recommends-slider 
-    min-width: 117%
+    min-width: 1200px
+    //min-width: 117%
 
 @media(max-width: 1399px)
   .services-slider 
@@ -41,12 +54,12 @@
     min-width: 107%
 
   .results-slider 
-    width: 115%
-    left: -15%
+    //width: 115%
+    //left: -15%
 
   .results-slider__item 
 
-    margin: 0 10px
+    //margin: 0 10px
 
 
   .recommends-slider 
@@ -56,7 +69,9 @@
 
 @media(max-width: 1299px)
   .services-slider 
-    width: 110%
+    width: 100%
+    min-width: 100%
+    max-width: 100%
     &__item
       max-width: 570px
 
@@ -64,7 +79,9 @@
     width: 500px
 
   .team-slider
+    width: 100%
     min-width: 100%
+    max-width: 100%
     left: 0%
     position: relative
     left: unset
@@ -79,14 +96,19 @@
     height: 3px
 
   .results-slider 
-    width: 113%
-    left: -60px
+    width: 100%
+    min-width: 100%
+    max-width: 100%
+    //width: 113%
+    //left: -60px
 
   .results-slider__item 
-    height: 350px
+    //height: 350px
 
   .recommends-slider
+    width: 100%
     min-width: 100%
+    max-width: 100%
     left: 0%
     position: relative
     left: unset
@@ -102,7 +124,9 @@
     margin-top: 30px
 
   .recommends-slider 
+    width: 100%
     min-width: 100%
+    max-width: 100%
 
   
 
@@ -134,24 +158,50 @@
     margin-bottom: 20px
 
   .results-slider 
-    width: 100%
+    height: 100%
+    position: relative
     top: unset
     left: unset
-    position: relative
+    &__wrapper
+      height: 900px
+
+    &__item 
+      flex-direction: column !important
+      min-height: 900px
+      margin: 0 0px 0px 57px
+
+      .slider-photo 
+        width: 100%
+
+      .results-slider__info 
+        width: 100%
+        margin-top: 20px
+        margin-left: 0px
+        text-align: center
+
+        &-extras 
+          margin-top: 50px !important
+
+
+    //width: 100%
+    //top: unset
+    //left: unset
+    //position: relative
 
   .results-arrows 
-    position: relative
+    position: relative//absolute
+    margin-top: 30px
     top: unset
     left: unset
-    margin-top: 40px
-    margin-left: 10px
+    margin-left: 0
     width: 100%
+    bottom: unset//-40px
 
   .results-slider__info-extras 
-    margin-top: 40px
+    //margin-top: 40px
 
   .results .slick-list.draggable 
-    padding: 0 50px 0px 0px !important
+    //padding: 0 50px 0px 0px !important
 
 
 
@@ -261,15 +311,6 @@
     width: 100%
     margin-left: 0
 
-  
-
-
-
-    
-
-
-
-  
 
 
 @media(max-width: 767px)
@@ -278,7 +319,7 @@
 
   .cta 
     padding-bottom: 60px
-    margin-top: -100px
+    margin-top: 0px
 
   section.about
     padding-top: 0 
@@ -291,6 +332,20 @@
 
   .about-logos
     justify-content: space-around
+
+  .services 
+    &-slider 
+      &__item 
+        margin: 0 7px
+      .slick 
+        &-list.draggable
+              padding: 0px 25px !important
+
+        &-slide 
+          padding: 20px 0px
+        &-active 
+          padding: 0px 0px
+          max-width: 600px
 
   .services-info__list 
     margin-top: 40px
@@ -326,7 +381,28 @@
 
   .team-slider 
     margin-top: 40px
+    margin-left: 0
+    .slick-list.draggable 
+      padding: 0px 0px !important
+    &__item
+      max-width: unset
+      margin: 0 5px
+   
+      &.slick-active 
+        padding: 0px 0px
 
+  .recommends-slider__item 
+    
+    max-width: unset
+
+  .recommends-slider .slick-list.draggable 
+    padding: 0 50px !important
+
+  .recommends-slider__item .slider-photo img 
+    width: 100%
+    height: auto
+
+  
   .footer-descr 
     margin-top: 40px
 
@@ -344,13 +420,55 @@
   .footer-policy
     margin-top: 15px
 
-  
+  .footer-copy, .footer-rekv
+    display: block
+    margin: 0 auto
+    text-align: center
+    margin-bottom: 15px
+
+  section.results
+    padding: 70px 0px 120px 0px
 
 
   
+
+
+
+
 
 
 @media(max-width: 575px)
+  .slider-arrows 
+    width: 100%
+    background: none
+    text-align: center
+    height: fit-content
+    width: fit-content
+    margin: 0 auto
+    margin-top: 40px
+  .slider-arrows__left 
+    width: 100%
+    left: unset
+    top: unset 
+    position: relative
+    margin-top: 50px
+  .slider-arrows__right
+    width: 150px 
+    right: unset
+    top: unset 
+    position: relative
+    
+  // .slider-arrows__left 
+  //   left: 20px
+  // .slider-arrows__right
+  //   top: 40px
+  //   right: 20px 
+  .services-arrows 
+    // display: flex
+    // flex-direction: column 
+    // align-items: center 
+    // justify-content: space-between
+
   .calculations-title 
     margin-bottom: 0px
 
@@ -362,5 +480,22 @@
     width: 100%
     img 
       padding: 0px 70px
+
+    
+  .cta-bottom 
+    margin-top: 60px
+
+  section.results
+    padding: 70px 0px 190px 0px
+
+  section.team 
+    padding: 70px 0px 120px 0px
+
+  section.services 
+    padding: 70px 0px 100px 0px
+
+  
+  .results-slider__info-extras .extra-item__text 
+    font-size: 30px
 
   

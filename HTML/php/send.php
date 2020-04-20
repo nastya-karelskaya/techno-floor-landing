@@ -1,104 +1,124 @@
 <?php 
 
-if(isset($_POST["user_phone"]) || isset($_POST["user_email"]) ) {
+if( ( isset($_POST["user_contacts"]) ) || ( isset($_POST["phone"]) ) || ( isset($_POST["mail"]) ) ) { 
+    
   // configure
   //Конфиг для почты 
-  $to = "nastya-pavlova-93@yandex.ru"; //Кому
-  $to_two = "nastya89215244781@yandex.ru"; //Кому
+  $to = "mail@naptech.ru"; //Кому
+  $to_two = "nastya-pavlova-93@yandex.ru"; //Кому
   $from = "anastasia-pavlova.com"; //От кого
-  $subject = "PFP-лендинг"; //Тема
+  $subject = 'Новое сообщение от "НАПОЛЬНЫЕ ТЕХНОЛОГИИ" (naptech.ru)'; //Тема
   
-
-  // let's do the sending
-  if(isset($_POST["user_email"])) 
-    $user_email = htmlentities($_POST['user_email']);
-
-  if(isset($_POST["user_phone"])) 
-    $user_phone = htmlentities($_POST['user_phone']);
-
-  if(isset($_POST["square"])) 
-    $square = htmlentities($_POST['square']);
   
-  if(isset($_POST["baget"])) 
-    $baget = htmlentities($_POST['baget']);
-
-  if(isset($_POST["material"])) 
-    $material = htmlentities($_POST['material']);
-
-  if(isset($_POST["time"])) 
-    $time = htmlentities($_POST['time']);
-
-
-
-  if(isset($_POST["whatsapp"])) {
-    $whatsapp = htmlentities($_POST['whatsapp']);
-  }
-
-  if(isset($_POST["options"])) {
-    $options = htmlentities($_POST['options']);
-  }
-    
-
+  $emailText = "Новое сообщение от \"НАПОЛЬНЫЕ ТЕХНОЛОГИИ\" (naptech.ru) \n ======== \n";
+        
 
   try
   {
-    $emailText = "Новое сообщение от PFP-лендинг \n========\n";
-    
-    if($user_phone) 
-      $emailText .= "Телефон: $user_phone\n";
-
-    if($user_email) 
-      $emailText .= "Email: $user_email\n";
-
-
-    if($whatsapp || $options)
-      $emailText .= "======= Примечания =======\n";
-
-
-    if($whatsapp === 'call') 
-      $emailText .= "Позвонить в WhatsApp\n";
-    
-    if($whatsapp === 'enginier') 
-      $emailText .= "Выезд инженера. WhatsApp\n";
-
-
-    switch ($options) {
-      case 'three':
-        $emailText .= "Рассчет в 3 вариантах\n";
-        break;
-
-      case 'price':
-        $emailText .= "Выслать прайс на материалы\n";
-        break;
-
-      case 'tz':
-        $emailText .= "Разработка ТЗ\n";
-        break;
-
-      case 'calc':
-        $emailText .= "Калькулятор\n";
-        if($square) 
-          $emailText .= "Площадь по полу: $square\n";
-
-        if($baget) 
-          $emailText .= "Бюджет: $baget\n";
-
-        if($time) 
-          $emailText .= "Сроки: $time\n";
-
-        if($material) 
-          $emailText .= "Материал покрытия: $material\n";
-        break;
-      
-      case 'enginier':
-        $emailText .= "Выезд инженера. Позвонить\n";
-        break;
-
-      default:
-        break;
+    if(isset($_POST['user_contacts'])) {
+        $userContacts = htmlentities($_POST['user_contacts']);
+        
+        if( !empty($userContacts) ) {
+            $emailText .= "Телефон или почта: $userContacts \n\n";
+        }
     }
-
-
+    
+    if(isset($_POST['phone'])) {
+        $userContacts = htmlentities($_POST['phone']);
+        
+        if( !empty($userContacts) ) {
+            $emailText .= "Телефон: $userContacts \n\n";
+        }
+    }
+    
+    if(isset($_POST['user_name'])) {
+        $userName = htmlentities($_POST['user_name']);
+        
+        if( !empty($userName) ) {
+            $emailText .= "Имя клиента или название компании: $userName \n\n"; 
+        }
+    }
+    
+    if(isset($_POST['square'])) {
+        $square = htmlentities($_POST['square']);
+        
+        if( !empty($square) ) {
+            $emailText .= "Площадь объекта и локация объекта: $square \n\n";
+        }
+    }
+    
+    if(isset($_POST['companyName'])) {
+        $companyName = htmlentities($_POST['companyName']);
+        
+        if( !empty($companyName) ) {
+            $emailText .= "Имя клиента или название компании: $companyName \n\n";
+        }
+    }
+    
+    if(isset($_POST['optionSocials'])) {
+        $optionSocials = htmlentities($_POST['optionSocials']);
+        
+        if( !empty($optionSocials)  ) {
+            $emailText .= "Примечание: позвонить в $optionSocials \n\n";
+        }
+    }
+    
+    if(isset($_POST['comment'])) {
+        $comment = htmlentities($_POST['comment']);
+        
+        if( !empty($comment)  ) {
+            $emailText .= "Комментарий клиента: $comment \n\n";
+        }
+    }
+    
+    if(isset($_POST['mail'])) {
+        $mail = htmlentities($_POST['mail']);
+        
+        if( !empty($mail)  ) {
+            $emailText .= "Почта: $mail \n\n";
+        }
+    }
+    
+    
+    if(isset($_POST['material'])) {
+        $material = htmlentities($_POST['material']);
+        
+        if( !empty($material)  ) {
+            $emailText .= "Материал пола: $material \n\n";
+        }
+    }
+    
+    if(isset($_POST['floorSystem'])) {
+        $floorSystem = htmlentities($_POST['floorSystem']);
+        
+        if( !empty($floorSystem)  ) {
+            $emailText .= "Система пола: $floorSystem \n\n";
+        }
+    }
+    
+    if(isset($_POST['floorFunction'])) {
+        $floorFunction = htmlentities($_POST['floorFunction']);
+        
+        if( !empty($floorFunction)  ) {
+            $emailText .= "Функция пола: $floorFunction \n\n";
+        }
+    }
+    
+    if(isset($_POST['isRulerNeeded'])) {
+        $isRulerNeeded = htmlentities($_POST['isRulerNeeded']);
+        
+        if( !empty($isRulerNeeded)  ) {
+            
+            if( $isRulerNeeded == 'on') {
+                $emailText .= "Требуется выравнивание основания \n\n";
+            }
+           
+        }
+    }
+    
+    
+    
+    
     $responseArray = array('type' => 'success', 'message' => $emailText);
 
       

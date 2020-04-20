@@ -1,0 +1,135 @@
+@import 'variables'
+@import 'interface'
+
+body 
+  text-align: center
+
+.sps 
+  display: flex
+  flex-direction: column 
+  justify-content: center 
+  align-items: center 
+  border-radius: 50%
+  border: 2px solid #ebebeb
+  width: 600px
+  height: 600px
+  position: relative
+  padding: 80px
+  margin: 0 auto 
+  // max-width: 700px
+  // max-height: 700px
+
+  // min-width: 200px
+  // min-height: 200px
+  &-wrapper
+    text-align: center
+    padding: 70px 20px
+    height: 100vh
+    display: flex
+    flex-direction: column 
+    justify-content: center 
+    align-items: center 
+    margin-top: -30px
+
+
+  &-title 
+    margin-top: 35px
+    font-size: 28px
+    font-family: Ubuntu, san-serif
+    font-weight: bold
+    color: $black
+
+  &-subtitle 
+    margin-top: 15px
+    font-size: 16px
+    font-family: Montserrat, san-serif
+    
+    color: #7a818b
+
+
+
+
+  &-icon 
+    width: 265px
+    height: 200px
+    background: url(../img/sent.png) center no-repeat
+    background-size: contain
+    margin-top: -20px
+
+  &-close 
+    color: #ebebeb
+    font-size: 45px
+    font-weight: bold
+    position: absolute
+    right: -20px
+    top: -20px
+
+    &:hover 
+      color: #7a818b
+      cursor: pointer
+      transition: .5s ease
+
+
+@media(max-width: 767px)
+  .sps
+    width: 450px
+    height: 450px
+    padding: 50px
+
+
+    &-icon 
+      width: 195px
+      height: 170px
+      margin-top: 0
+
+    &-title 
+      margin-top: 25px
+      font-size: 24px
+
+    &-subtitle 
+      font-size: 20px
+
+    &-close 
+      right: -10px
+      top: -10px
+
+@media(max-width: 499px)
+  .sps
+    width: 350px
+    height: 350px
+    padding: 50px
+
+
+    &-icon 
+      width: 195px
+      height: 170px
+      margin-top: 0
+
+    &-title 
+      margin-top: 25px
+      font-size: 20px
+
+    &-subtitle 
+      font-size: 16px
+      margin-top: 15px
+
+    &-close 
+      right: -10px
+      top: -10px
+
+@media(max-width: 399px)
+  .sps
+    width: 300px
+    height: 300px
+    padding: 50px
+
+
+    &-icon 
+      width: 175px
+      height: 160px
+      margin-top: 0
+
+    
+
+
+

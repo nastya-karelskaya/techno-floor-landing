@@ -7,6 +7,18 @@
 
   &-content 
     border-radius: 0
+    position: relative
+    .close 
+      position: absolute
+      top:  10px 
+      right: 20px
+      z-index: 10
+      outline: none 
+      user-select: none
+      span 
+        font-size: 40px
+        font-weight: bold
+        color: #818181
 
 
 
@@ -16,7 +28,8 @@
       .modal
         &-dialog 
           max-width: 1170px
-          width: 100%
+          width: 90%
+          margin: 0 auto
 
   &-small 
     &-width 
@@ -57,23 +70,59 @@
       height: 100%
       width: 100%
       padding: 80px 40px
-      .input-wrapper 
-        position: relative
 
-        label 
+      .inputfile
+        position: relative
+        font-size: 10px
+        
+        width: fit-content
+        height: fit-content
+        right: 0px
+        top: 45px
+        border: none
+        // height: 0.1px
+        // opacity: 0
+        // overflow: hidden
+        position: absolute
+        // z-index: -1
+      
+        &::before 
+          position: absolute
+          content: ''
+          // width: 205px
+          // height: 35px
+          background-color: #ffffff
+          left: 0
+          top: 0
+
+        &__label 
+          z-index: 10
           font-size: 12px
           font-weight: 700
           color: white
           background-color: transparent
           background: url(../img/forms/paperclick.png) center no-repeat 
-         
           background-size: contain
           position: absolute
-          right: 52px
+          right: 32px
           top: 33px
           width: 22px
           height: 23px
           display: block
+          &:hover 
+            cursor: pointer 
+            width: 24px
+            height: 27px
+            filter: brightness(0.5)
+            transition: .5s ease
+
+
+
+      .input-wrapper 
+        position: relative
+
+        label 
+          
 
         .caption
           position: absolute
@@ -82,6 +131,16 @@
           color: #818181
           font-family: Montserrat, san-serif
           font-size: 12px
+          &.captionApp
+            display: none
+          &.active 
+            top: -15px
+            z-index: 10
+            display: block
+            transition: .5s ease
+
+
+
 
           
         // .icon 
@@ -92,6 +151,20 @@
         //   height: 23px
         //   background: url(../img/forms/paperclick.png) center no-repeat 
         //   background-size: contain
+
+      .file-error 
+        &.hidden 
+          color: red
+          font-family: Montserrat, san-serif
+          font-size: 12px
+          transition: .5s ease
+          display: none 
+        
+        &.error
+          display: block
+
+
+
       .input-fake 
         border: 1px dashed rgba(0,0,0,.2)
         width: 100%
@@ -102,6 +175,10 @@
         font-family: Montserrat, san-serif
         font-size: 12px
         background: transparent
+        &.error 
+          border-color: red 
+          transition: .5s ease
+
        
       input
         width: 100%
@@ -118,29 +195,20 @@
         
 
         &[type="file"]
-          
-          position: relative
-          font-size: 10px
-          
-          width: fit-content
-          height: fit-content
-          right: 120px
-          top: 18px
-          border: none
-          // height: 0.1px
-          // opacity: 0
-          // overflow: hidden
-          position: absolute
-          // z-index: -1
-        
-          &::before 
-            position: absolute
-            content: ''
-            width: 205px//70%
-            height: 100%
+          &::-webkit-file-upload-button 
+            //cursor: pointer
             background-color: #ffffff
-            left: 0
-            top: 0
+            border: 0px
+            width: 30%
+            height: 20px
+            border-radius: 0px
+            color: #ffffff
+            letter-spacing: .01em
+            font-size: 1px
+            font-weight: 0
+
+          
+          
 
         &[type="file" i]
           -webkit-appearance: none
@@ -152,11 +220,40 @@
           transition: .5s ease
 
       
+      label
+        &.hidden 
+          color: red
+          font-family: Montserrat, san-serif
+          font-size: 12px
+          margin-top: -20px
+          margin-bottom: 25px
+          display: none 
+          transition: .5s ease
+          
+        
+        &.error
+          display: block
+
+      span.file-error
+        color: red
+        font-family: Montserrat, san-serif
+        font-size: 12px
+        margin-top: -20px
+        margin-bottom: 25px
+        transition: .5s ease
+        &.hidden     
+          display: none
+
+        &.error
+          display: block 
+
+      
 
 
-      button, .button 
+
+      .button 
         width: 100% 
-        height: 85px
+        padding: 34px 10px
         display: block
         text-align: center
         span 
@@ -202,9 +299,27 @@
       &-item 
         display: flex
         flex-direction: row 
-        justify-content: center 
+        justify-content: flex-start 
         align-items: center 
         margin-bottom: 30px
+        margin-right: 25px
+        &s 
+          display: flex
+          flex-direction: row 
+          justify-content: flex-start
+          flex-wrap: wrap
+
+        &__wrapper 
+          .modal-part__info-item
+            margin-right: 0
+            align-items: end
+
+          .modal-part__info-text 
+            max-width: 80%
+
+          .modal-part__info-icon_compass
+            margin-top: 10px
+            margin-left: 10px
 
       &-icon 
         &__wrapper 
@@ -213,7 +328,7 @@
           position: relative
           background-color: #f8f8f8
           border-radius: 50%
-          margin-right: 20px
+          margin-right: 10px
 
         &_phone, &_mail 
           position: absolute
@@ -269,7 +384,61 @@
         font-size: 18px
 
 
- 
+    &__form 
+      .input-wrapper 
+        position: relative
+        .caption 
+          
+
+        .wa-checker, .vb-checker
+          &__wrapper
+            position: absolute
+            top: 0
+            right: 0
+            width: 81px
+            height: 86px
+            &.active 
+              background-color: #e4e4e4
+              transition: .5s ease
+
+            &:hover 
+              background-color: #e4e4e4
+              transition: .5s ease
+              cursor: pointer 
+
+
+        .wa-checker
+          
+          right: 28px
+          top: 28px
+          background: url(../img/forms/wa.png) center no-repeat 
+          background-size: contain
+          width: 26px
+          height: 26px 
+          position: absolute
+          &__wrapper
+            right: 0px
+          
+        .vb-checker
+          right: 28px
+          top: 28px
+          position: absolute
+          background: url(../img/forms/vb.png) center no-repeat 
+          background-size: contain
+          width: 26px
+          height: 26px
+          &__wrapper
+            right: 81px
+
+
+#errorModal 
+  .modal-part
+    &__center
+      padding: 30px 20px
+
+    &__title
+      margin-bottom: 0
+
 
   
 #freeSampleModal 
@@ -324,43 +493,50 @@
 
     &__form 
 
-      .input-wrapper 
-        position: relative
-        .caption 
+      // .input-wrapper 
+      //   position: relative
+      //   .caption 
           
 
-        .wa-checker, .vb-checker
-          &__wrapper
-            position: absolute
-            top: 0
-            right: 0
-            width: 81px
-            height: 86px
-            &.active 
-              background-color: #e4e4e4
+      //   .wa-checker, .vb-checker
+      //     &__wrapper
+      //       position: absolute
+      //       top: 0
+      //       right: 0
+      //       width: 81px
+      //       height: 86px
+      //       &.active 
+      //         background-color: #e4e4e4
+      //         transition: .5s ease
 
-        .wa-checker
+      //       &:hover 
+      //         background-color: #e4e4e4
+      //         transition: .5s ease
+      //         cursor: pointer 
+
+
+      //   .wa-checker
           
-          right: 28px
-          top: 28px
-          background: url(../img/forms/wa.png) center no-repeat 
-          background-size: contain
-          width: 26px
-          height: 26px 
-          position: absolute
-          &__wrapper
-            right: 0px
+      //     right: 28px
+      //     top: 28px
+      //     background: url(../img/forms/wa.png) center no-repeat 
+      //     background-size: contain
+      //     width: 26px
+      //     height: 26px 
+      //     position: absolute
+      //     &__wrapper
+      //       right: 0px
           
-        .vb-checker
-          right: 28px
-          top: 28px
-          position: absolute
-          background: url(../img/forms/vb.png) center no-repeat 
-          background-size: contain
-          width: 26px
-          height: 26px
-          &__wrapper
-            right: 81px
+      //   .vb-checker
+      //     right: 28px
+      //     top: 28px
+      //     position: absolute
+      //     background: url(../img/forms/vb.png) center no-repeat 
+      //     background-size: contain
+      //     width: 26px
+      //     height: 26px
+      //     &__wrapper
+      //       right: 81px
 
 
 
@@ -388,41 +564,41 @@
 
     &__form 
 
-      .input-wrapper 
-        position: relative
+      // .input-wrapper 
+      //   position: relative
 
-        .wa-checker, .vb-checker
-          &__wrapper
-            position: absolute
-            top: 0
-            right: 0
-            width: 81px
-            height: 86px
-            &.active 
-              background-color: #e4e4e4
+      //   .wa-checker, .vb-checker
+      //     &__wrapper
+      //       position: absolute
+      //       top: 0
+      //       right: 0
+      //       width: 81px
+      //       height: 86px
+      //       &.active 
+      //         background-color: #e4e4e4
 
-        .wa-checker
+      //   .wa-checker
           
-          right: 28px
-          top: 28px
-          background: url(../img/forms/wa.png) center no-repeat 
-          background-size: contain
-          width: 26px
-          height: 26px 
-          position: absolute
-          &__wrapper
-            right: 0px
+      //     right: 28px
+      //     top: 28px
+      //     background: url(../img/forms/wa.png) center no-repeat 
+      //     background-size: contain
+      //     width: 26px
+      //     height: 26px 
+      //     position: absolute
+      //     &__wrapper
+      //       right: 0px
           
-        .vb-checker
-          right: 28px
-          top: 28px
-          position: absolute
-          background: url(../img/forms/vb.png) center no-repeat 
-          background-size: contain
-          width: 26px
-          height: 26px
-          &__wrapper
-            right: 81px
+      //   .vb-checker
+      //     right: 28px
+      //     top: 28px
+      //     position: absolute
+      //     background: url(../img/forms/vb.png) center no-repeat 
+      //     background-size: contain
+      //     width: 26px
+      //     height: 26px
+      //     &__wrapper
+      //       right: 81px
 
 #basePriceModal 
   .modal-part
@@ -463,7 +639,13 @@
     &__left
       
 
-    &__right 
+    &__right
+
+  .button 
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center 
 
 
 
@@ -491,41 +673,41 @@
 
     &__form 
 
-      .input-wrapper 
-        position: relative
+      // .input-wrapper 
+      //   position: relative
 
-        .wa-checker, .vb-checker
-          &__wrapper
-            position: absolute
-            top: 0
-            right: 0
-            width: 81px
-            height: 86px
-            &.active 
-              background-color: #e4e4e4
+      //   .wa-checker, .vb-checker
+      //     &__wrapper
+      //       position: absolute
+      //       top: 0
+      //       right: 0
+      //       width: 81px
+      //       height: 86px
+      //       &.active 
+      //         background-color: #e4e4e4
 
-        .wa-checker
+      //   .wa-checker
           
-          right: 28px
-          top: 28px
-          background: url(../img/forms/wa.png) center no-repeat 
-          background-size: contain
-          width: 26px
-          height: 26px 
-          position: absolute
-          &__wrapper
-            right: 0px
+      //     right: 28px
+      //     top: 28px
+      //     background: url(../img/forms/wa.png) center no-repeat 
+      //     background-size: contain
+      //     width: 26px
+      //     height: 26px 
+      //     position: absolute
+      //     &__wrapper
+      //       right: 0px
           
-        .vb-checker
-          right: 28px
-          top: 28px
-          position: absolute
-          background: url(../img/forms/vb.png) center no-repeat 
-          background-size: contain
-          width: 26px
-          height: 26px
-          &__wrapper
-            right: 81px 
+      //   .vb-checker
+      //     right: 28px
+      //     top: 28px
+      //     position: absolute
+      //     background: url(../img/forms/vb.png) center no-repeat 
+      //     background-size: contain
+      //     width: 26px
+      //     height: 26px
+      //     &__wrapper
+      //       right: 81px 
 
 
 
@@ -547,7 +729,18 @@
       
 
     &__right 
+  
+  .button 
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center 
 
+@media(max-width: 1199px)
+  #docsModal
+    .modal-part__left input, .modal-part__right input, .modal-part__center input 
+      padding: 10px 20px 10px 65px
+  
     
 @media(max-width: 1099px)
   .modal-part__left input, .modal-part__right input, .modal-part__center input 
@@ -560,3 +753,56 @@
 
   .modal-part__left .input-wrapper label, .modal-part__right .input-wrapper label, .modal-part__center .input-wrapper label 
     right: 35px
+
+
+
+@media(max-width: 991px)
+  #freeSampleModal 
+    .modal-part__right 
+      .modal-part__title 
+        margin-top: 0px
+
+
+    .modal-part__left .inputfile, .modal-part__right .inputfile, .modal-part__center .inputfile 
+      top: 20px
+
+@media(max-width: 767px) 
+  .modal-part__form .input-wrapper .wa-checker__wrapper, .modal-part__form .input-wrapper .vb-checker__wrapper 
+    width: 58px
+  
+
+  .modal-part__form .input-wrapper .vb-checker__wrapper 
+    right: 58px
+
+  .modal-part__form .input-wrapper .vb-checker 
+    right: 22px
+    width: 18px
+    height: 18px
+    top: 32px
+
+  .modal-part__form .input-wrapper .wa-checker 
+    right: 22px
+    width: 18px
+    height: 18px
+    top: 32px
+
+  #freeSampleModal .modal-part__left .inputfile
+    top: 40px
+
+  .modal-part__left .input-wrapper label.inputfile__label
+    top: 50px
+
+@media(max-width: 575px) 
+  .modal-part__left, .modal-part__right, .modal-part__center 
+    padding: 40px 20px
+
+  .modal-part__left input, .modal-part__right input, .modal-part__center input 
+    padding: 10px 20px 10px 20px !important
+
+  .modal-part__title-text 
+    font-size: 18px
+
+  #freeSampleModal .modal-part__left .inputfile 
+    top: 0px
+    right: -50px
+

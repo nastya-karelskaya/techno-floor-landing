@@ -4,20 +4,200 @@
   background-color: $gray
   background: url(../img/gr-bg.jpg) center no-repeat
   background-size: cover
-  padding: 132px 0px 262px 0px
-  
-
+  padding: 132px 0px 162px 0px
   
   &-title 
     color: $white
 
+  .slick 
+    &-list.draggable
+      padding: 0 0px 0px 0px !important
+      //padding: 0 0px 0px 240px !important
+
+    &-active 
+      //padding: 0px 0px
+      max-width: unset
+
+  /////////////////
+  .slick 
+    &-list.draggable
+      padding: 0 50px 0px 0px !important
+      min-height: 430px !important
+
+    &-slide 
+      padding: 20px 0px
+    &-active 
+      padding: 0px 0px
+      max-width: 1000px
+  ////////////////////////////////
+
   &-slider
     //margin-top: 70px
+    position: absolute
+    // width: 880px
+    // left: -240px
+    top: 0
+    left: 0
+    width: 1300px
+
+    &__wrapper 
+      position: relative
+      margin-top: 70px
+      height: 500px
+
     &__item 
+      display: flex !important
+      flex-direction: row !important
+      height: 400px
+      //width: 550px !important //100%
+      width: 100%
+      margin: 0 77px 0px 0px
+      //margin: 0 20px
+
+      .slider-photo
+        // border-radius: 5px       
+        height: 100%
+        border-radius: 2px
+        //min-width: 550px !important
+        width: 55%  
+        img 
+          width: 100%
+          height: auto
+          
+     
+      &1
+        .slider-photo
+          // width: 100%
+          height: 100%
+          background: url(../img/9/r-9.png) center, no-repeat
+          background-size: cover
+
+        .results-slider__info
+          &-pars 
+            
+          &-extras 
+            margin-top: 120px
+        
+      &2
+        .slider-photo
+          // width: 100%
+          height: 100%
+          background: url(../img/9/r-8.png) center, no-repeat
+          background-size: cover
+
+        .results-slider__info-extras 
+          margin-top: 80px
+
+        .results-slider__info
+          &-pars 
+            margin-top: 15px
+            
+          &-extras 
+            margin-top: 15px
+
+      &3
+        .slider-photo
+          // width: 100%
+          height: 100%
+          background: url(../img/9/r-7.png) center, no-repeat
+          background-size: cover
+
+        .results-slider__info
+          &-pars 
+            
+          &-extras 
+            margin-top: 110px
+      
+      &4
+        .slider-photo
+          // width: 100%
+          height: 100%
+          background: url(../img/9/r-6.png) center, no-repeat
+          background-size: cover
+
+        .results-slider__info
+          &-pars 
+            
+          &-extras 
+            margin-top: 140px
+      
+      &5
+        .slider-photo
+          // width: 100%
+          height: 100%
+          background: url(../img/9/r-5.png) center, no-repeat
+          background-size: cover
+
+        .results-slider__info
+          &-pars 
+            margin-top: 15px
+            
+          &-extras 
+            margin-top: 15px
+
+      &6
+        .slider-photo
+          // width: 100%
+          height: 100%
+          background: url(../img/9/r-4.png) center, no-repeat
+          background-size: cover
+
+        .results-slider__info
+          &-pars 
+            
+          &-extras 
+            margin-top: 55px
+
+      &7
+        .slider-photo
+          // width: 100%
+          height: 100%
+          background: url(../img/9/r-3.png) center, no-repeat
+          background-size: cover
+
+        .results-slider__info
+          &-pars 
+            
+          &-extras 
+            margin-top: 90px
+
+      &8
+        .slider-photo
+          // width: 100%
+          height: 100%
+          background: url(../img/9/r-2.png) center, no-repeat
+          background-size: cover
+
+        .results-slider__info
+          &-pars 
+            margin-top: 15px
+
+          &-extras 
+            margin-top: 15px
+
+
+
+      &9
+        .slider-photo
+          // width: 100%
+          height: 100%
+          background: url(../img/9/r-1.png) center, no-repeat
+          background-size: cover
+
+        .results-slider__info
+          &-pars 
+            
+          &-extras 
+            margin-top: 80px
+
       img 
         //width: 100%
+
+      
     &__info
-      margin-top: 70px
+      width: 44%
+      margin-top: 0px
+      margin-left: 30px
       &-title 
         color: $white
         font-family: Ubuntu, sans-serif
@@ -30,11 +210,12 @@
         font-size: 14px
         p 
           margin-bottom: 10px
+          font-size: 14px
 
       &-extras
         // display: flex 
         // flex-direction: row 
-        margin-top: 150px
+        margin-top: 50px
         .extra-item
           display: inline-block 
           width: 49%
@@ -48,103 +229,11 @@
             font-family: Montserrat, sans-serif
             font-size: 50px
 
-  .slick 
-    &-list.draggable
-      padding: 0 0px 0px 240px !important
-    
-  &-slider
-    position: absolute
-    width: 880px
-    left: -240px
-    top: 0
-    
-    &__wrapper 
-      position: relative
-      margin-top: 70px
-    &__item
-      
-      height: 400px
-      width: 100%
-      
-      margin: 0 20px
-      .slider-photo
-        // border-radius: 5px       
-        height: 100%
-        border-radius: 2px
-        width: 100%  
-        img 
-          width: 100%
-          height: auto
-          
-     
-      &1
-        .slider-photo
-          width: 100%
-          height: 100%
-          background: url(../img/9/r-1.png) center, no-repeat
-          background-size: cover
-        
-      &2
-        .slider-photo
-          width: 100%
-          height: 100%
-          background: url(../img/9/r-2.png) center, no-repeat
-          background-size: cover
-      &3
-        .slider-photo
-          width: 100%
-          height: 100%
-          background: url(../img/9/r-3.png) center, no-repeat
-          background-size: cover
-      &4
-        .slider-photo
-          width: 100%
-          height: 100%
-          background: url(../img/9/r-4.png) center, no-repeat
-          background-size: cover
-      &5
-        .slider-photo
-          width: 100%
-          height: 100%
-          background: url(../img/9/r-5.png) center, no-repeat
-          background-size: cover
-
-      &6
-        .slider-photo
-          width: 100%
-          height: 100%
-          background: url(../img/9/r-6.png) center, no-repeat
-          background-size: cover
-
-
-      &7
-        .slider-photo
-          width: 100%
-          height: 100%
-          background: url(../img/9/r-7.png) center, no-repeat
-          background-size: cover
-
-
-      &8
-        .slider-photo
-          width: 100%
-          height: 100%
-          background: url(../img/9/r-8.png) center, no-repeat
-          background-size: cover
-
-
-      &9
-        .slider-photo
-          width: 100%
-          height: 100%
-          background: url(../img/9/r-9.png) center, no-repeat
-          background-size: cover
-
-
+  
   &-arrows
     position: absolute
     top: 460px
-    left: 20px
+    left: 0px
     width: 600px
     height: 3px
     background-color: #7b7b7b
@@ -167,7 +256,9 @@
 
 
 
+      
 
 
+  
 
 

@@ -214,26 +214,29 @@
                 height: 31px
                 width: 31px
                 background-color: #eee
-                &:after 
-                    content: ""
-                    position: absolute
-                    //display: none
-                    left: 8px
-                    top: 10px
-                    width: 16px
-                    height: 8px
-                    border: solid $blue
-                    border-width: 3px 3px 0 0
-                    -webkit-transform: rotate(135deg)
-                    -ms-transform: rotate(135deg)
-                    transform: rotate(135deg)
-                    // transform: scale(-1, 1)
+                &.active
+                    &:after 
+                        content: ""
+                        position: absolute
+                        //display: none
+                        left: 8px
+                        top: 10px
+                        width: 16px
+                        height: 8px
+                        border: solid $blue
+                        border-width: 3px 3px 0 0
+                        -webkit-transform: rotate(135deg)
+                        -ms-transform: rotate(135deg)
+                        transform: rotate(135deg)
+                        // transform: scale(-1, 1)
                     
 
 
         &__button 
             width: 100%
             margin-top: 60px
+            display: block
+            text-align: center
             
             &-wrapper 
                 display: flex
@@ -258,7 +261,7 @@
 
     .select
         background-color: $white
-        padding: 27px 123px 27px 39px
+        padding: 27px 123px 47px 39px
         
         label 
             color: $text-black
