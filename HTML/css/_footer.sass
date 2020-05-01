@@ -18,11 +18,22 @@
     flex-direction: row
     justify-content: flex-start
     max-width: 400px
+    align-items: center
 
     &__img 
       margin-right: 18px
+      &-wrapper 
+        width: 41px
+        height: 41px
+        background: rgba(255, 255, 255, .15)
+        border-radius: 50%
+        position: relative
       img 
-        width: 21px
+        width: 18px
+        position: absolute
+        top: 10px
+        left: 12px
+        height: 24px
         //margin-right: 19px
 
 
@@ -30,7 +41,13 @@
       color: $white
       font-family: Ubuntu, san-serif
       font-size: 18px 
-      
+      a 
+        color: $white
+        font-family: Ubuntu, san-serif
+        font-size: 18px 
+        &:hover 
+          text-decoration: none
+        
 
   &-socials
     display: flex 
@@ -52,9 +69,40 @@
         height: 21px
 
   &-info 
-    margin-top: 45px
+    margin-top: 110px
     text-align: right
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-content: center
+    align-items: center
+    flex-wrap: wrap
     
+
+    
+    .phone, .email
+      margin-bottom: 25px
+      display: flex 
+      flex-direction: row
+      justify-content: flex-end
+      align-items: center
+      &-icon 
+        margin-right: 16px
+        width: 41px
+        height: 41px
+        background: rgba(255, 255, 255, .15)
+        border-radius: 50%
+        position: relative
+        img
+          width: 17px
+          height: 24px
+          position: absolute
+          top: 10px
+          left: 10px
+          // width: 21px
+          // height: 21px
+      &-text 
+        a 
 
     .phone
       a
@@ -62,26 +110,32 @@
         font-size: 20px 
         font-weight: bold
         color: $white
+        &:hover 
+          text-decoration: none
+
+      &-icon 
+        img 
+          left: 13px
+          top: 9px
+          width: 16px
+          height: 22px
     .email
+      margin-left: 60px
       a
         font-family: Ubuntu, san-serif
         font-size: 18px 
         
         color: $white
-        text-decoration: underline
-    .phone, .email
-      margin-bottom: 25px
-      display: flex 
-      flex-direction: row
-      justify-content: flex-end
-      &-icon 
-        margin-right: 16px
-        img
-          width: 18px
-          height: 18px
-      &-text 
-        a 
+        text-decoration: none
+        &:hover 
+          text-decoration: none
 
+      &-icon 
+        img 
+          width: 22px
+          height: 16px
+          top: 13px
+          left: 10px
   hr 
     border-color: #c1c1c1
     height: 1px
@@ -100,6 +154,7 @@
       font-size: 14px
       
       text-transform: uppercase
+      text-decoration: none
 
   
   &-copy 

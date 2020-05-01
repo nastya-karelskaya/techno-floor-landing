@@ -1,9 +1,9 @@
 @media(max-width: 1599px)
-  .services-slider 
-    width: 125%
+  // .services-slider 
+  //   width: 125%
 
-  .services-slider__item 
-    margin: 0 10px
+  // .services-slider__item 
+  //   margin: 0 10px
 
   .team-slider
     //min-width: 123%
@@ -27,8 +27,8 @@
     //min-width: 120%
 
 @media(max-width: 1499px)
-  .services-slider 
-    width: 120%
+  // .services-slider 
+  //   width: 120%
 
   .team-slider
     min-width: 115%
@@ -47,8 +47,8 @@
     //min-width: 117%
 
 @media(max-width: 1399px)
-  .services-slider 
-    width: 110%
+  // .services-slider 
+  //   width: 110%
 
   .team-slider
     min-width: 107%
@@ -68,15 +68,15 @@
 
 
 @media(max-width: 1299px)
-  .services-slider 
-    width: 100%
-    min-width: 100%
-    max-width: 100%
-    &__item
-      max-width: 570px
+  // .services-slider 
+  //   width: 100%
+  //   min-width: 100%
+  //   max-width: 100%
+  //   &__item
+  //     max-width: 570px
 
-  .services-arrows
-    width: 500px
+  // .services-arrows
+  //   width: 500px
 
   .team-slider
     width: 100%
@@ -105,6 +105,10 @@
   .results-slider__item 
     //height: 350px
 
+  .results-arrows 
+    
+    width: 51%
+
   .recommends-slider
     width: 100%
     min-width: 100%
@@ -130,9 +134,9 @@
 
   
 
-  .services-arrows 
+  // .services-arrows 
 
-    left: 0px
+  //   left: 0px
 
   .cta-bottom
     margin-top: 0px
@@ -143,8 +147,8 @@
 
 @media(max-width: 1199px)
 
-  .services-slider 
-    //width: 105%
+  // .services-slider 
+  //   //width: 105%
 
 
   .header-menu ul li 
@@ -157,45 +161,55 @@
   .calculations-title 
     margin-bottom: 20px
 
-  .results-slider 
-    height: 100%
-    position: relative
-    top: unset
-    left: unset
-    &__wrapper
-      height: 900px
+  .results
+    padding: 132px 0px 
+    .slick-list.draggable 
+      padding: unset !important
+      min-height: unset !important
 
-    &__item 
-      flex-direction: column !important
-      min-height: 900px
-      margin: 0 0px 0px 57px
 
-      .slider-photo 
-        width: 100%
+    &-slider 
+      height: 100%
+      position: relative
+      top: unset
+      left: unset
+      &__wrapper
+        height: 900px
 
-      .results-slider__info 
-        width: 100%
-        margin-top: 20px
-        margin-left: 0px
-        text-align: center
+      &__item 
+        flex-direction: column !important
+        min-height: 900px
+        margin: 0 
 
-        &-extras 
-          margin-top: 50px !important
+        .slider-photo 
+          width: 100%
 
+        .results-slider__info 
+          width: 100%
+          margin-top: 20px
+          margin-left: 0px
+          text-align: center
+
+          &-extras 
+            margin-top: 50px !important
+
+    &-arrows 
+      width: 100%
+      top: 250px
 
     //width: 100%
     //top: unset
     //left: unset
     //position: relative
 
-  .results-arrows 
-    position: relative//absolute
-    margin-top: 30px
-    top: unset
-    left: unset
-    margin-left: 0
-    width: 100%
-    bottom: unset//-40px
+  // .results-arrows 
+  //   position: relative//absolute
+  //   margin-top: 30px
+  //   top: unset
+  //   left: unset
+  //   margin-left: 0
+  //   width: 100%
+  //   bottom: unset//-40px
 
   .results-slider__info-extras 
     //margin-top: 40px
@@ -217,22 +231,22 @@
     padding-left: 0
 
 
-  .services-slider 
-    width: 100%
-    top: unset
-    left: unset
-    position: relative
+  // .services-slider 
+  //   width: 100%
+  //   top: unset
+  //   left: unset
+  //   position: relative
 
-  .services-arrows 
-    position: relative
-    top: unset
-    left: unset
-    margin-top: 40px
-    margin-left: 10px
+  // .services-arrows 
+  //   position: relative
+  //   top: unset
+  //   left: unset
+  //   margin-top: 40px
+  //   margin-left: 10px
 
 
-  .services .slick-list.draggable 
-    padding: 0 50px 0px 0px !important
+  // .services .slick-list.draggable 
+  //   padding: 0 50px 0px 0px !important
 
 
   
@@ -268,7 +282,7 @@
 
 
   .team-slider .slick-list.draggable 
-    height: 540px
+    // height: 540px
 
   .logos-items 
     margin-top: 50px
@@ -304,18 +318,65 @@
   .cta-bottom .cta-item__text
     text-align: center
 
-  .services-slider__wrapper 
-    margin-top: 30px
 
-  .services-arrows 
-    width: 100%
-    margin-left: 0
+  .services
+    &-slider
+      &__item
+        height: 600px
+      &__wrapper
+        height: 600px
+
+    &-content 
+      position: absolute
+      top: 45px
+      left: 80px
+      padding: 60px 52px
+      z-index: 10
+      max-width: 580px
+      background-color: rgba(0, 0, 0, 0.5)
+
+    &-arrows 
+      top: 264px
+  
+    
+
+  .examples
+    &-slider
+      &__item
+        height: 600px
+      &__wrapper
+        height: 600px
+
+    &-content 
+      position: absolute
+      top: 65px
+      left: 90px
+      padding: 60px 52px
+      z-index: 10
+      max-width: 580px
+      background-color: rgba(0, 0, 0, 0.5)
+
+    &-arrows 
+      top: 264px
+  
+    
+  // .services-slider__wrapper 
+  //   margin-top: 30px
+
+  // .services-arrows 
+  //   width: 100%
+  //   margin-left: 0
 
 
 
 @media(max-width: 767px)
   .main .button 
     margin-top: 36px
+
+  .main-caption
+    margin-left: 0px
+    margin-top: 30px
+    max-width: unset
 
   .cta 
     padding-bottom: 60px
@@ -332,23 +393,28 @@
 
   .about-logos
     justify-content: space-around
+    margin-top: 25px
+    height: fit-content
+    &__half
+      &-img 
+        margin-bottom: 34px
 
-  .services 
-    &-slider 
-      &__item 
-        margin: 0 7px
-      .slick 
-        &-list.draggable
-              padding: 0px 25px !important
+  // .services 
+  //   &-slider 
+  //     &__item 
+  //       margin: 0 7px
+  //     .slick 
+  //       &-list.draggable
+  //             padding: 0px 25px !important
 
-        &-slide 
-          padding: 20px 0px
-        &-active 
-          padding: 0px 0px
-          max-width: 600px
+  //       &-slide 
+  //         padding: 20px 0px
+  //       &-active 
+  //         padding: 0px 0px
+  //         max-width: 600px
 
-  .services-info__list 
-    margin-top: 40px
+  // .services-info__list 
+  //   margin-top: 40px
 
   section.toget 
     padding-bottom: 40px
@@ -387,24 +453,109 @@
     &__item
       max-width: unset
       margin: 0 5px
+      .slider-descr
+        text-align: center
    
       &.slick-active 
         padding: 0px 0px
 
+
+  .recommends-arrows
+    display: none
+
+  .recommends-slider 
+    margin-top: 0px
+    left: 5px
+
+  .recommends-slider__wrapper 
+    margin-top: 0px
+
   .recommends-slider__item 
-    
+    margin: 0
     max-width: unset
 
   .recommends-slider .slick-list.draggable 
-    padding: 0 50px !important
+    padding: unset !important
 
   .recommends-slider__item .slider-photo img 
     width: 100%
     height: auto
 
+  .results-arrows 
+    display: none
+
+  .results-slider__wrapper 
+    margin-top: 30px
+
+  section.services 
+    padding: 0px 0px
+
+  section.examples 
+    padding:  0px
+
+  section.recommends
+    padding-bottom: 0
+
+  .services
+
+    &-slider 
+      &__item 
+        height: 600px
+      &__wrapper
+        height: 600px 
+
+    &-arrows 
+      display: none
+      
+    &-content
+      left: unset
+      top: unset
+      position: relative
+      margin-bottom: 50px
+
+      &__info-list 
+        margin-top: 30px
+
+
+    .section-title
+      font-size: 35px
+
+
+  .examples
+    &-arrows 
+      display: none
+    &-content
+      left: unset
+      top: unset
+      position: relative
+      margin-bottom: 50px
+
+    .section-title
+      font-size: 35px
+
+    .section-descr 
+      margin-top: 30px
+
+    &-slider 
+      &__item 
+        height: 600px
+      &__wrapper
+        height: 600px 
+
+  .cta-bottom
+    margin-top: 220px
+
+
+    
+
+  .footer-logo 
+    text-align: center
+
   
   .footer-descr 
     margin-top: 40px
+    justify-content: center
+    max-width: unset
 
   .footer-socials 
     justify-content: center
@@ -412,6 +563,7 @@
 
   .footer-info .phone, .footer-info .email 
     justify-content: center
+    padding: 0px 10px
 
   .footer hr 
     margin-top: 30px
@@ -425,6 +577,15 @@
     margin: 0 auto
     text-align: center
     margin-bottom: 15px
+
+  .footer-info 
+    margin-top: 40px
+    text-align: center 
+    justify-content: center
+    
+    .email 
+      margin-left: 0px
+
 
   section.results
     padding: 70px 0px 120px 0px
@@ -472,6 +633,10 @@
   .calculations-title 
     margin-bottom: 0px
 
+  .calculations .section-caption
+    bottom: 0
+    right: 0
+
   .calculations-form 
     margin-top: 33px
 
@@ -486,16 +651,37 @@
     margin-top: 60px
 
   section.results
-    padding: 70px 0px 190px 0px
+    padding: 70px 0px 210px 0px
 
   section.team 
     padding: 70px 0px 120px 0px
 
   section.services 
-    padding: 70px 0px 100px 0px
+    padding: 20px 0px 0px 0px
+
+  section.examples 
+    padding: 0px 0px 0px 0px
+
 
   
   .results-slider__info-extras .extra-item__text 
     font-size: 30px
+
+  .results-slider__item .slider-photo
+    max-height: 350px
+
+  .results-slider__wrapper 
+    height: 550px
+    margin-top: 0
+
+  .services-content, .examples-content 
+    padding: 35px 20px
+    .section-title 
+      padding-bottom: 15px
+      font-size: 28px
+      line-height: 36px
+
+    .section-descr
+      margin-top: 15px
 
   

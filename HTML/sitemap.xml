@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Файл sitemap.xml динамически создан сайтом https://gensitemap.ru/ 20.04.2020 21:32,
+	всего найдено 2. страниц-->
+	<url>
+		<loc>http://naptech.ru/policy.html</loc>
+		<lastmod>2020-04-20T21:32:48+03:00</lastmod>
+		<priority>0.5</priority>
+		<changefreq>hourly</changefreq>
+	</url>
+	<url>
+		<loc>http://naptech.ru/</loc>
+		<lastmod>2020-04-20T21:32:48+03:00</lastmod>
+		<priority>1</priority>
+		<changefreq>always</changefreq>
+	</url>
+</urlset>		     		    			    

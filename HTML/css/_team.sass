@@ -28,9 +28,10 @@
       margin-top: 90px
     &__item
       
-      height: 400px
+      height: 430px
       width: 100%
       max-width: 394px
+      outline: none !important 
       //min-width: 300px
       margin: 0 20px
       &.slick 
@@ -77,22 +78,22 @@
 
           &:hover 
             &::after 
-              content: ''
-              width: 100%
-              height: 100%
-              position: absolute
-              top: 0
-              left: 0
-              background-color: $blue
-              opacity: .7
-              transition: all .3s
-              cursor: pointer
-              border-color: $white
+              // content: ''
+              // width: 100%
+              // height: 100%
+              // position: absolute
+              // top: 0
+              // left: 0
+              // background-color: $blue
+              // opacity: .7
+              // transition: .5s ease
+              // cursor: pointer
+              // border-color: $white
 
             a 
-              z-index: 10
-              opacity: 1
-              transition: opacity .3s
+              // z-index: 10
+              // opacity: 1
+              // transition: opacity .3s
 
 
 
@@ -114,13 +115,27 @@
             font-family: Montserrat, sans-serif
             font-size: 14px
             color: $text-black
+
+          &__mail
+            margin-top: 10px
+            a
+              margin-top: 13px
+              font-family: Montserrat, sans-serif
+              font-size: 14px
+              color: $text-black
+              //font-weight: bold
+              &:hover 
+                color: #565DA4
+                text-decoration: none
+                transition: .5s ease
      
       &1
         padding: 0
+        
         .slider-photo
           width: 100%
           height: 100%
-          background: url(../img/7/t1.png) center, no-repeat
+          background: url(../img/team/t1.png) center, no-repeat
           background-size: cover
           // img 
             //height: 430px !important
@@ -129,19 +144,19 @@
         .slider-photo
           width: 100%
           height: 100%
-          background: url(../img/7/t2.png) center, no-repeat
+          background: url(../img/team/t2.png) center, no-repeat
           background-size: cover
       &3
         .slider-photo
           width: 100%
           height: 100%
-          background: url(../img/7/t3.png) center, no-repeat
+          background: url(../img/team/t3.png) center, no-repeat
           background-size: cover
       &4
         .slider-photo
           width: 100%
           height: 100%
-          background: url(../img/7/t4.png) center, no-repeat
+          background: url(../img/team/t4.png) center, no-repeat
           background-size: cover
       &5
         
@@ -168,13 +183,13 @@
 
     &__left 
       left: 0
-      background: url(../img/7/a-left.png) left no-repeat
+      background: url(../img/team/a-left.png) left no-repeat
       
       
 
     &__right 
       right: 0
-      background: url(../img/7/a-right.png) right no-repeat
+      background: url(../img/team/a-right.png) right no-repeat
 
 
 

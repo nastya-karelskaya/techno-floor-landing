@@ -85,6 +85,8 @@
         // overflow: hidden
         position: absolute
         // z-index: -1
+        &:hover 
+          cursor: pointer
       
         &::before 
           position: absolute
@@ -126,6 +128,8 @@
 
         .caption
           position: absolute
+          // right: 0px
+          // top: -25px
           left: 105px
           top: 33px 
           color: #818181
@@ -133,6 +137,9 @@
           font-size: 12px
           &.captionApp
             display: none
+            right: 0px
+            top: -20px
+            left: unset
           &.active 
             top: -15px
             z-index: 10
@@ -393,10 +400,11 @@
         .wa-checker, .vb-checker
           &__wrapper
             position: absolute
-            top: 0
-            right: 0
+            top: 1px
+            right: 1px
             width: 81px
-            height: 86px
+            height: 83px
+            background-color: #F8F8F8
             &.active 
               background-color: #e4e4e4
               transition: .5s ease
@@ -417,7 +425,7 @@
           height: 26px 
           position: absolute
           &__wrapper
-            right: 0px
+            right: 1px
           
         .vb-checker
           right: 28px
@@ -428,7 +436,7 @@
           width: 26px
           height: 26px
           &__wrapper
-            right: 81px
+            right: 82px
 
 
 #errorModal 
@@ -791,6 +799,19 @@
 
   .modal-part__left .input-wrapper label.inputfile__label
     top: 50px
+
+  .modal-part__left, .modal-part__right, .modal-part__center 
+    padding: 50px 30px
+  
+
+  .modal-part__info hr 
+    margin-top: 60px
+    margin-bottom: 22px
+  
+
+  .modal-part__info-item 
+    margin-bottom: 20px
+  
 
 @media(max-width: 575px) 
   .modal-part__left, .modal-part__right, .modal-part__center 

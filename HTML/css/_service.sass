@@ -1,114 +1,286 @@
 .services
-  background: url(../img/gr-bg.jpg) center no-repeat
-  background-size: cover
-  padding: 174px 0px
+  position: relative
 
-  &-info
-    &__list
-      margin-top: 70px
-      li 
-        list-style-type: none
-        margin-bottom: 20px
-        display: flex 
-        flex-direction: row
-        img 
-          width: 24px
-          height: 20px
-          margin-right: 19px
-        span 
-          color: $white
-          font-family: Montserrat, san-serif
-          font-size: 16px
+  
+
+  &-content 
+    position: absolute
+    top: 115px
+    left: 116px
+    padding: 90px 62px 
+    z-index: 10
+    max-width: 480px
+    background-color: rgba(0, 0, 0, .5)
+
+
+    .section-title 
+      color: #ffffff
+      font-family: Ubuntu, san-serif
+      font-size: 50px
+      font-weight: bold
+      line-height: 50px
+      text-align: left
+
+    .section-descr 
+      margin-top: 50px
+      font-family: Montserrat, sans-serif
+      font-size: 16px
+      color: #ffffff
+      text-align: left
+
+    &__info
+    
+      &-list
+        margin-top: 70px
+        li 
+          list-style-type: none
+          margin-bottom: 20px
+          display: flex 
+          flex-direction: row
+          img 
+            width: 24px
+            height: 20px
+            margin-right: 19px
+          span 
+            color: $white
+            font-family: Montserrat, san-serif
+            font-size: 16px
+
+      
+
+
 
   &-slider
-    position: absolute
-    width: 880px
-
-    .slick 
-      &-list.draggable
-        padding: 0 50px 0px 0px !important
-
-      &-slide 
-        padding: 20px 0px
-      &-active 
-        padding: 0px 0px
-        max-width: 600px
-       
-
-    &__wrapper 
-      position: relative
-    &__item
-      
-      height: 360px
-      width: 100%
-      
-      margin: 0 20px
-      .slider-photo
-        // border-radius: 5px       
-        height: 100%
-        border-radius: 2px
-        width: 100%  
-        img 
+    &__item 
+      height: 840px
+      .slider-photo 
           width: 100%
-          height: 360px
-     
+          height: 100%
       &1
-        .slider-photo
-          // width: 100%
-          // height: 100%
-          background: url(../img/3/s1.jpeg) center, no-repeat
+        .slider-photo 
+          background: url(../img/services/1.jpg) center, no-repeat
           background-size: cover
-        
+
       &2
-        .slider-photo
-          // width: 100%
-          // height: 100%
-          background: url(../img/3/s2.jpeg) center, no-repeat
+        .slider-photo 
+          background: url(../img/services/2.jpg) center, no-repeat
           background-size: cover
+
       &3
-        .slider-photo
-          // width: 100%
-          // height: 100%
-          background: url(../img/3/s3.jpeg) center, no-repeat
+        .slider-photo 
+          background: url(../img/services/3.jpg) center, no-repeat
           background-size: cover
+
       &4
-        .slider-photo
-          // width: 100%
-          // height: 100%
-          background: url(../img/3/s4.jpeg) center, no-repeat
+        .slider-photo 
+          background: url(../img/services/4.jpg) center, no-repeat
           background-size: cover
+
       &5
-        
-        .slider-photo
-          //width: 100%
-          height: 252px
-          background: url(../img/service-5.png) center, no-repeat
+        .slider-photo 
+          background: url(../img/services/5.jpg) center, no-repeat
+          background-size: cover
+
+      &6
+        .slider-photo 
+          background: url(../img/services/6.jpg) center, no-repeat
+          background-size: cover
+
+      &7
+        .slider-photo 
+          background: url(../img/services/7.jpg) center, no-repeat
+          background-size: cover
+
+      &8
+        .slider-photo 
+          background: url(../img/services/8.jpg) center, no-repeat
+          background-size: cover
+
+      &9
+        .slider-photo 
+          background: url(../img/services/9.jpg) center, no-repeat
+          background-size: cover
+
+      &10
+        .slider-photo 
+          background: url(../img/services/10.jpg) center, no-repeat
+          background-size: cover
+
+      &11
+        .slider-photo 
+          background: url(../img/services/11.jpg) center, no-repeat
+          background-size: cover
+
+      &12
+        .slider-photo 
+          background: url(../img/services/12.jpg) center, no-repeat
+          background-size: cover
+
+      &13
+        .slider-photo 
+          background: url(../img/services/13.jpg) center, no-repeat
+          background-size: cover
+
+      &14
+        .slider-photo 
+          background: url(../img/services/14.jpg) center, no-repeat
+          background-size: cover
+
+      &15
+        .slider-photo 
+          background: url(../img/services/15.jpg) center, no-repeat
           background-size: cover
 
 
+    &__top 
+      //position: absolute
+    &__wrapper 
+      height: 840px
+
+  
   &-arrows
     position: absolute
-    top: 420px
-    left: 20px
-    width: 700px
-    height: 3px
-    background-color: #7b7b7b
+    top: 394px
+    left: 0px
+    width: 100%
+    z-index: 10
+    //height: 3px
+    //background-color: #d5d5d5
     &__left, &__right 
       position: absolute
-      width: 200px
-      height: 7px
-      background-size: contain
-      top: -2px
+      width: 76px
+      height: 76px
+      background-size: cover !important
+      top: 0px
 
     &__left 
       left: 0
-      background: url(../img/3/a-left.png) left no-repeat
-      
+      background: url(../img/al.svg) left no-repeat
+     
       
 
     &__right 
       right: 0
-      background: url(../img/3/a-right.png) right no-repeat
+      background: url(../img/ar.svg) right no-repeat
+
+
+  
+  // .services
+//   //background: url(../img/gr-bg.jpg) center no-repeat
+//   //background-size: cover
+//   padding: 174px 0px
+
+//   &-info
+    
+//     &__list
+//       margin-top: 70px
+//       li 
+//         list-style-type: none
+//         margin-bottom: 20px
+//         display: flex 
+//         flex-direction: row
+//         img 
+//           width: 24px
+//           height: 20px
+//           margin-right: 19px
+//         span 
+//           color: $white
+//           font-family: Montserrat, san-serif
+//           font-size: 16px
+
+//   &-slider
+//     position: absolute
+//     width: 880px
+
+//     &__info 
+//       background: #6f6e6e
+//       padding: 90px 62px
+
+//     // .slick 
+//     //   &-list.draggable
+//     //     padding: 0 50px 0px 0px !important
+
+//     //   &-slide 
+//     //     padding: 20px 0px
+//     //   &-active 
+//     //     padding: 0px 0px
+//     //     max-width: 600px
+       
+
+//     &__wrapper 
+//       position: relative
+//     &__item
+      
+//       height: 360px
+//       width: 100%
+//       outline: none !important 
+//       margin: 0 20px
+//       .slider-photo
+//         // border-radius: 5px       
+//         height: 100%
+//         border-radius: 2px
+//         width: 100%  
+//         img 
+//           width: 100%
+//           height: 360px
+     
+//       &1
+//         .slider-photo
+//           // width: 100%
+//           // height: 100%
+//           background: url(../img/services/s1.jpeg) center, no-repeat
+//           background-size: cover
+        
+//       &2
+//         .slider-photo
+//           // width: 100%
+//           // height: 100%
+//           background: url(../img/services/s2.jpeg) center, no-repeat
+//           background-size: cover
+//       &3
+//         .slider-photo
+//           // width: 100%
+//           // height: 100%
+//           background: url(../img/services/s3.jpeg) center, no-repeat
+//           background-size: cover
+//       &4
+//         .slider-photo
+//           // width: 100%
+//           // height: 100%
+//           background: url(../img/services/s4.jpeg) center, no-repeat
+//           background-size: cover
+//       &5
+        
+//         .slider-photo
+//           //width: 100%
+//           height: 252px
+//           background: url(../img/services/s5.jpeg) center, no-repeat
+//           background-size: cover
+
+
+//   &-arrows
+//     position: absolute
+//     top: 420px
+//     left: 20px
+//     width: 700px
+//     height: 3px
+//     background-color: #7b7b7b
+//     &__left, &__right 
+//       position: absolute
+//       width: 200px
+//       height: 7px
+//       background-size: contain
+//       top: -2px
+
+//     &__left 
+//       left: 0
+//       background: url(../img/services/a-left.png) left no-repeat
+      
+      
+
+//     &__right 
+//       right: 0
+//       background: url(../img/services/a-right.png) right no-repeat
 
 
 

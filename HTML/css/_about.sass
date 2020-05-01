@@ -23,16 +23,26 @@
     margin-top: 28px
 
   &-logos 
-    margin-top: 27px
+    margin-top: 95px
     display: flex 
     flex-direction: row 
     justify-content: space-between
+    height: 63%
     &__half
       text-align: center
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-content: space-between
+      align-items: center
       &-img 
-        margin-bottom: 34px
+        //margin-bottom: 34px
         img 
           filter: grayscale(100%)
+          &:hover
+            webkit-filter: grayscale(0%)
+            filter: grayscale(0%)
+            transition: .5s ease
 
     
     

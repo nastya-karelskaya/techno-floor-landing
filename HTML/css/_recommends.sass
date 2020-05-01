@@ -39,7 +39,8 @@
       width: 100%
       max-width: 394px
       margin: 0 20px
-      outline: none
+
+      outline: none !important 
       
       &.slick 
         &-active 
@@ -77,10 +78,12 @@
               position: absolute
               top: 0
               left: 0
-              background-color: #565DA4
-              opacity: .7
+              background-color: #000000
+              opacity: .4
+              // background-color: #565DA4
+              // opacity: .7
               -webkit-transition: all .3s
-              transition: all .3s
+              transition: .5s ease
               cursor: pointer
               border-color: #ffffff
 
@@ -144,12 +147,12 @@
 
     &__left 
       left: 0
-      background: url(../img/7/a-left.png) left no-repeat
+      background: url(../img/recommends/a-left.png) left no-repeat
       
       
 
     &__right 
       right: 0
-      background: url(../img/7/a-right.png) right no-repeat
+      background: url(../img/recommends/a-right.png) right no-repeat
 
 

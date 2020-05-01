@@ -254,6 +254,8 @@
         top: 20px
         left: 0px
         background: none
+        height: 100%
+        padding: 7px 0px 20px 0px
         //display: none
         select 
             display: none
@@ -270,15 +272,25 @@
        
         &-selected 
             background-color: transparent
-            padding-left: 39px
+            //padding-left: 39px
+            padding: 27px 5px 20px 39px
             color: $text-black
             font-family: Montserrat, san-serif
             font-size: 14px
+            height: 74px
+            margin-top: -27px
+            border-right: 1px solid #dcdcdc
+            border-left: 1px solid #dcdcdc
+            border-top: 1px solid #dcdcdc
+            border-bottom: 1px solid #ffffff
             //display: none
+            &:hover 
+                cursor: pointer
+                transition: .5s ease
             &:after 
                 position: absolute
                 content: ""
-                top: 3px
+                top: 4px
                 right: 50px
                 width: 30px
                 height: 30px
@@ -291,24 +303,30 @@
         &-items 
             position: absolute
             background-color: $white
-            top: 40px
+            top: 54px
             left: 0
             
             z-index: 99
             width: 100%
+            border-right: 1px solid #dcdcdc
+            border-left: 1px solid #dcdcdc
+            border-bottom: 1px solid #dcdcdc
+
             
-            margin-top: 7px
+            
             div
                 padding-left: 39px
-                padding-top: 20px
-                padding-bottom: 20px
+                padding-top: 25px
+                padding-bottom: 25px
                 padding-right: 10px
                 color: $text-black
                 font-family: Montserrat, san-serif
                 font-size: 14px
                 &:hover
+                    cursor: pointer
                     background-color: $blue
                     color: $white
+                    transition: .5s ease
     
             &::before 
                 // position: absolute
