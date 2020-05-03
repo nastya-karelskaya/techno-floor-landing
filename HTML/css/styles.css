@@ -3698,17 +3698,23 @@ img.custom-lightbox-hover-shadow {
   .services-content, .examples-content {
     padding: 35px 20px;
     margin-bottom: 0;
+    background-color: #ffffff;
   }
   .services-content .section-title, .examples-content .section-title {
     padding-bottom: 15px;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 36px;
+    color: #1C161C;
   }
   .services-content .section-descr, .examples-content .section-descr {
     margin-top: 15px;
+    display: none;
   }
   .services-slider__top .col-12, .examples-slider__top .col-12 {
     padding: 0;
+  }
+  .services-content__info-list {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
